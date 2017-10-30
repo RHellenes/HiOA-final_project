@@ -1,0 +1,185 @@
+/*////////   Mobile    /////////*/
+*{
+	box-sizing: border-box;
+
+}
+
+body{
+	width: 100%;
+	background-color: red;
+	margin: 0;
+	font-size: 1.1em;
+	font-family: sans-serif;
+	height: 1000px;
+}
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+
+	background-color: #fff;
+	height: 70px;
+	overflow: hidden;
+	transition: all 0.4s;
+
+
+}
+.open_menu{
+	height: 65vh;
+	background-color: #192042;
+
+	transition: all .4s;
+	color: #fff;
+}
+.logo_area {
+	height: 48px;
+	margin: 10px 20px;
+	float: left;
+}
+.logo_area{
+	height: 43px;
+	margin-top: 5px;
+	width: auto;
+	z-index: 1000;
+
+}
+.logo_area svg{
+	height: 48px;
+	margin: 9px 0;
+}
+.white_svg_fill{
+	fill:#ffffff !important;
+	color: #ffffff;
+}
+
+.menu_icon{
+	float: right;
+	width: 45px;
+	height: 48px;
+	padding:3px;
+	margin: 10px 20px;
+	position: relative;
+	cursor: pointer;
+
+}
+
+.line1,
+.line2,
+.line3{
+	width: 100%;
+	height: 5px;
+	background-color: #192042;
+
+
+
+}
+.line1,
+.second_line,
+.line3{
+	display: block;
+	float: left;
+	width: 100%;
+	margin:6px 0;
+	transition: all 1s;
+	position: absolute;
+}
+.line1{
+	top:0;
+}
+.second_line{
+	margin-top:17px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: center;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+.line3{
+	bottom: 0;
+}
+
+
+.move_away{
+	margin-right: -80px;
+	opacity: 1;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+.short{
+	width: 33%;
+	float: left;
+	margin-left:10px;
+}
+.icon_text{
+	font-size: 0.8em;
+	line-height: 0.5em;
+	color:#192042;
+	width: 60%;
+	font-weight: bolder;
+	margin:0 5px 0 -10px;
+	float: left;
+
+}
+.white_bg{
+	background-color: #fff; 
+	transition: all .3s;	
+}
+.white_text{
+	color: #fff;
+	transition: all .3s;
+}
+nav{
+	
+	height: 200px;
+	width: 100%;
+	float: left;
+	z-index:999;
+}
+nav ul{
+	float: left;
+	padding: 0;
+	width: 95%;
+	margin-left: 2.5%;
+
+}
+
+nav ul li{
+	text-align: center;
+	padding: 0.9em 0;
+	width: 80%;
+	margin-left: 10%;
+	margin: 20px 0 20px 10%;
+	-ms-transform: skew(-25deg,0deg);
+    -webkit-transform: skew(-25deg,0deg); 
+    transform: skew(-25deg,0deg); 
+    border: 2px solid #F2C94C;
+    list-style-type: none;
+
+}
+.anti_skew{
+	margin: 0;
+	-ms-transform: skew(25deg,0deg); 
+    -webkit-transform: skew(25deg,0deg); 
+    transform: skew(25deg,0deg); 
+}
+
+
+
+
+
+/*////////   Tablet-stående    /////////*/
+@media only screen and (min-width: 786px){
+
+}
+
+
+/*////////   Tablet-liggende/ liten desktop versjon /////////*/
+@media only screen and (min-width: 1024px){ 
+
+}
+
+/*////////   Desktop    /////////*/
+@media only screen and (min-width: 1200px){
+
+}
