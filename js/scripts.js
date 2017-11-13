@@ -1,26 +1,45 @@
-function sidebar() {
 
-	document.querySelector('.header').classList.toggle('open_menu')
-
-	/*menu_icon*/
-	document.querySelector('.line1').classList.toggle('white_bg');
-	document.querySelector('.icon_text').classList.toggle('white_text');
-	document.querySelector('.line2').classList.toggle('white_bg');
-	document.querySelector('.line3').classList.toggle('white_bg');
-	document.querySelector('.second_line').classList.toggle('move_away');
-
-	/*Logo*/
- 	document.querySelector('.fill_color1').classList.toggle('white_svg_fill');
- 	document.querySelector('.fill_color2').classList.toggle('white_svg_fill');
- 	document.querySelector('.fill_color3').classList.toggle('white_svg_fill');
- 	document.querySelector('.fill_color4').classList.toggle('white_svg_fill');
- 	document.querySelector('.fill_color5').classList.toggle('white_svg_fill');
- 	document.querySelector('.fill_color6').classList.toggle('white_svg_fill');
-
-}
+	function mobile_nav(){
+		if(window.innerWidth < 1024){ 
+			/*Hindrer mobile_nav i å slå ut på desktop versjon*/
+			
+				/*Hviser hele nav + blåfarge*/
+				document.querySelector('.header').classList.toggle('open_menu')
+				document.querySelector('nav').classList.toggle('block_nav')
 
 
-if(header.contains('.open_menu')){
-	console.log("This works")
-}
+				/*menu_icon*/
+				document.querySelector('.line1').classList.toggle('white_bg');
+				document.querySelector('.line1').classList.toggle('rotate1');
+				document.querySelector('.icon_text').classList.toggle('white_text'); 
+				document.querySelector('.icon_text').classList.toggle('move_away'); 
+				document.querySelector('.line2').classList.toggle('white_bg'); 
+				document.querySelector('.line2').classList.toggle('rotate2');
+				
+				
+				
+
+				/*Logo*/
+			 	for (let i = 0; i <= 13; i++) {
+			 		document.querySelectorAll('.st1')[i].classList.toggle('white_svg_fill');
+			 	
+			 	}	
+			}
+		
+		else{
+
+			}
+	}
+	/*function rmv_nav{
+
+	}*/
+/*	function resize(){
+		if(window.innerWidth < 1024){
+			document.querySelector('.header').classList.remove('open_menu')
+		}
+		else{
+
+		}
+
+	}*/
 
