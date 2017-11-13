@@ -8,8 +8,6 @@ body {
 	width: 100%;
 	background-color: white;
 	margin: 0;
-	/* font-size: 1.1em; */
-	/* font-family: sans-serif; */
 	height: 1000px;
 	padding-top: 70px;
 }
@@ -17,21 +15,27 @@ header {
 	width: 100%;
 	position: fixed;
 	top: 0;
-	background-color: #1B1D42;
+	background-color: #ffffff;
 	height: 70px;
 	overflow: hidden;
 	transition: all 0.4s;
+	z-index: 2;
 }
 
 #forsidebilde {
 	max-width: 60%;
 	margin-left: 20%;
 }
+
 p {
-	padding: 1% 5% 1% 5%;
-	font-family: "Arial", sans-serif;
-	font-size: 1.1em;
+	font-family: "Roboto", sans-serif;
+	font-size: 0.8em;
 }
+
+section {
+	padding: 1% 5% 1% 5%;
+}
+
 .open_menu{
 	height: 65vh;
 	background-color: #192042;
@@ -59,7 +63,6 @@ p {
 	fill:#ffffff !important;
 	color: #ffffff;
 }
-
 .menu_icon{
 	float: right;
 	width: 45px;
@@ -68,18 +71,13 @@ p {
 	margin: 10px 20px;
 	position: relative;
 	cursor: pointer;
-
 }
-
 .line1,
 .line2,
 .line3{
 	width: 100%;
 	height: 5px;
 	background-color: #192042;
-
-
-
 }
 .line1,
 .second_line,
@@ -178,35 +176,42 @@ main {
 
 h2 {
 	padding: 0% 5%;
-	font-family: "Arial", sans-serif;
-	font-size: 1.4em;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6em;
 }
 
 h3 {
-	padding: 0% 5%;
-	font-family: "Arial", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.1em;
+	margin: 12% 0% 5% 0%;
 }
 
-#innrykkGul {
-	-ms-transform: skew(-25deg,0deg);
-    -webkit-transform: skew(-25deg,0deg); 
-    transform: skew(-25deg,0deg); 
-    height: 3%;
-    width: 3%;
-    
+.utheving {
+	height: auto;
+	width: 100%;
+
 }
 
+#blikkfang {
+	font-family: "Roboto", sans-serif;
+	font-size: 0.85em;
+	margin: 10% 0%;
+	width: 94%;
+	padding: 2%;
 
-
-.blikkfang {
-	margin-left: 10%;
-	margin-right: 10%;
-	/* display: inline; */
-	font-family: "Arial", sans-serif;
-	font-size: 1.1em;
 }
 
+#blikkfang::before {
+	content:" ";
+	-ms-transform: skew(0deg,-25deg);
+    -webkit-transform: skew(0deg,-25deg);
+    transform: skew(0deg,-25deg);
+    background-color: #F2C94C; 
+    height: 41px;
+    width: 8px;
+    margin: 0 2%;  
+    float: left;
+}
 
 
 
