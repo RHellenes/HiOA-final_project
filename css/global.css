@@ -27,8 +27,9 @@ header{
 	border-bottom: 1px solid #f1f1f1;
 	background-color: #fff;
 	height: 70px;
-	overflow: scroll;
+	overflow: hidden;
 	transition: all 0.4s;
+	z-index:1000;
 
 
 
@@ -36,7 +37,6 @@ header{
 .open_menu{
 	height:100vh;
 	background-color: #192042;
-
 	transition: all .4s;
 	color: #fff;
 }
@@ -132,14 +132,16 @@ header{
 nav{	
 	height: auto;
 	width: 100%;
-	float: left;
+	float: left; 
 	z-index:999;
 	overflow: hidden;
 	display: none;
+	padding-bottom: 20px;
 
 }
 .block_nav{
 	display: block;
+
 }
 #hidden_close_nav{
 	width: 100%;
@@ -276,7 +278,7 @@ nav ul li:hover{
 		margin: 0 2.5%;
 	}
 	.open_menu{
-	height:380px;
+
 	}
 
 }
@@ -298,8 +300,6 @@ nav ul li:hover{
 	}
 	.open_menu{
 		height:70px;
-
-
 	}
 
 	.logo_area{
@@ -316,18 +316,20 @@ nav ul li:hover{
 		height: 70px;
 		margin: 0;
 		display: block;
+		padding-bottom: 0;
 	}
 	.section_1,
 	.section_2{
-		margin: 0;
+		margin: 0 ;
 	}
 	.section_1{
-		width: 55%;
-		margin-left:10%;
+		width: 64%;
+		margin-left:5%;
 	}
 	.section_2{
 		width: 30%;
 		float:right;
+
 	}
 	
 	nav ul li{
