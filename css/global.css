@@ -63,7 +63,6 @@ header {
 	fill:#ffffff !important;
 	color: #ffffff;
 }
-
 .menu_icon{
 	float: right;
 	width: 60px;
@@ -72,9 +71,7 @@ header {
 	margin: 10px 20px;
 	position: relative;
 	cursor: pointer;
-
 }
-
 .line1,
 .line2{
 	height: 5px;
@@ -280,38 +277,53 @@ main {
 }
 main p {
 	font-family: "Roboto", sans-serif;
-	font-size: 1.1em;
+	font-size: 0.82em;
+	letter-spacing: 0.1px;
+	padding: 0% 5% 0% 10%;
 }
 
 h2 {
 	padding: 0% 5%;
 	font-family: "Roboto Condensed", condensed;
-	font-size: 1.4em;
+	font-size: 2.3em;
+	color: #192042;
+	font-weight: bold;
+	text-align: center;
 }
 
 h3 {
-	padding: 0% 5%;
+	padding: 0% 5% 0% 10%;
 	font-family: "Roboto Condensed", condensed;
-	font-size: 1.1em;
+	font-size: 1.4em;
+	margin: 18% 0% 5% 0%;
+	font-weight: bold;
 }
 
-#innrykkGul {
-	-ms-transform: skew(-25deg,0deg);
-    -webkit-transform: skew(-25deg,0deg); 
-    transform: skew(-25deg,0deg); 
-    height: 3%;
-    width: 3%;
-    
+.utheving {
+	height: auto;
+	width: 100%;
+
 }
 
+#blikkfang {
+	font-family: "Roboto", sans-serif;
+	font-size: 0.9em;
+	margin: 10% 0%;
+	width: 94%;
+	padding: 0% 5% 0% 9%;
+	font-weight: 300;
+}
 
-
-.blikkfang {
-	margin-left: 10%;
-	margin-right: 10%;
-	/* display: inline; */
-	font-family: "Arial", sans-serif;
-	font-size: 1.1em;
+#blikkfang::before {
+	content:" ";
+	-ms-transform: skew(0deg,-25deg);
+    -webkit-transform: skew(0deg,-25deg);
+    transform: skew(0deg,-25deg);
+    background-color: #F2C94C; 
+    height: 41px;
+    width: 8px;
+    margin: 0 2%;  
+    float: left;
 }
 
 .anti_skew{
@@ -332,7 +344,6 @@ h3 {
 
 	}
 }
-
 
 
 /*////////   Tablet-stående    /////////*/
