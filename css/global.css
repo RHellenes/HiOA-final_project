@@ -19,7 +19,7 @@ body {
 
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
-
+	background-color: #fefefe;
 	padding-top:70px;
 
 
@@ -30,7 +30,7 @@ header {
 	top: 0;
 
 	border-bottom: 1px solid #f1f1f1;
-	background-color: #fff;
+	background-color: #fefefe;
 	height: 70px;
 	overflow: hidden;
 	transition: all 0.4s;
@@ -45,7 +45,7 @@ header {
 	height:100vh;
 	background-color: #192042;
 	transition: all .4s;
-	color: #fff;
+	color: #fefefe;
 }
 .logo_area {
 	height: 48px;
@@ -61,8 +61,8 @@ header {
 	margin: 9px 0;
 }
 .white_svg_fill{
-	fill:#ffffff !important;
-	color: #ffffff;
+	fill:#fefefe !important;
+	color: #fefefe;
 }
 .menu_icon{
 	float: right;
@@ -116,7 +116,7 @@ header {
 	transition: all .3s;	
 }
 .white_text{
-	color: #fff;
+	color: #fefefe;
 	transition: all .3s;
 }
 .rotate1{
@@ -218,7 +218,7 @@ nav ul li:hover{
 }
 
 #lang_pos-ctrl a{
-	color:#B3B4C3;
+	color:#4D5C6F;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 2em;
@@ -265,13 +265,14 @@ nav ul li:hover{
 
 
 main {
-	width: 90%;
-	margin: 0 5%;
+	width: 100%;
+	margin: 0;
 
 }
 section{
-	width: 100%;
-	margin: 20px 0;
+	width: 90%;
+	margin: 20px 5%;
+	float: left;
 }
 #forsidebilde {
 	max-width: 60%;
@@ -282,37 +283,17 @@ h1,
 h2,
 h3{
 	font-family: "Roboto Condensed", condensed;
-	margin: 2.6rem 0 1.3rem 0;
+	margin: 2.6rem 0 0 0;
 	width: 100%;
 	color: #192042;
 	float: left;
 	
 }
-h1{
+main section > h1{
 	font-size: 3em;
 	font-weight: 700;
 	text-align: center;
 	margin-bottom:0.375rem;
-
-}
-
-h2 {
-	font-size: 1.5em;
-	font-weight: 700;
-}
-
-h3 {
-	font-size: 1.5em;
-	font-weight: 400;
-
-}
-main p {
-	font-family: "Roboto", sans-serif;
-	font-size: 1.1em;
-	letter-spacing: 0.2px;
-	line-height: 1.3em;
-	margin: .75em 0;
-	float: left;
 
 }
 main section hr{
@@ -322,6 +303,27 @@ main section hr{
 	background-color: #192042;
 	margin: 0px 10% 2.6rem 10%;
 }
+
+main section > h2 {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+main section > h3 {
+	font-size: 1.8em;
+	font-weight: 400;
+
+}
+main p {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.1em;
+	letter-spacing: 0.2px;
+	line-height: 1.5em;
+	margin: .75em 0;
+	float: left;
+
+}
+
 
 .liste_i_tekst{
 	margin: 0;
@@ -349,12 +351,12 @@ main section hr{
 #blikkfang {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	margin: 10% 0%;
 	width: 90%;
 	float: left;
 	display: block;
-	height: calc(3.9rem + 15px);
+	height: calc(3rem + 15px);
 
 }
 
@@ -408,7 +410,7 @@ main section hr{
 
 	.logo_area{
 		width: 18%;
-		background-color: #fff;
+		background-color: #fefefe;
 
 	}
 	#fill_override{
@@ -418,7 +420,7 @@ main section hr{
 		width: 82%;
 		float: left;
 		height: 70px;
-		margin: 0;
+		margin: 0 0 0 0%;
 		display: block;
 		padding-bottom: 0;
 	}
@@ -479,15 +481,45 @@ main section hr{
 	}
 
 	#color_override{
-		background-color: #fff;
+		background-color: #fefefe;
+	}
+	main section > hr,
+	main section > h1,
+	main section > h2,
+	main section > h3,
+	main section > p{
+		width: 60%;
+		margin-left: 30%;
+	}
+	main section > p{
+		font-size: 1.4em;
+	}
+
+	#blikkfang{
+		width: 45%;
+		font-size: 2rem;
+		margin: 1.3rem 0 1.3rem 30%;
+		height: calc(4rem + 15px);
+
+	}
+	#blikkfang::before{
+		width: 9px;
+	}
+	main section > h2{
+
 	}
 
 
 }
-
+@media only screen and (min-width: 1100px){
+	
+}
 /*////////   Desktop    /////////*/
-@media only screen and (min-width: 1200px){
-
+@media only screen and (min-width: 1254px){
+	nav{
+	width: 70%;
+	margin: 0 0 0 7.5%;
+	}
 }
 
 /* Skriv under hver av de ulike skjermstørrelser! Mobil først. 
