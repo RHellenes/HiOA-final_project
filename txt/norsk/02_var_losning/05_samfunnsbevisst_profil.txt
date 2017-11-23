@@ -1,6 +1,0 @@
-Satt i et informasjon- og samfunnsbevisst lys, er det å bidra til å bygge norges nye nødvarslings-plattform utelukkende positivt. 
-Det er tross alt til samfunnets beste om flest mulig får muligheten til å bli varslet ved nødssituasjoner og ekstraordinære hendelser. 
-En varslings-klar app vil også øke sannsynligheten betraktelig for at brukeren aktiverer stedtjenester i mobilappen i det hele tatt. 
-Dette i kombinasjon med økt mediedekning vil reflektere og føre til økt tillit innad i egen brukerbase.
-For ytterligere å senke terskelen for implementering, er det også mulig for utviklere å søke om subsidier til utvikling og integrering  av nødvarslings-modulen. 
-Mer info om søknadsprosessen finnes hos Avdeling for IKT og fornying.

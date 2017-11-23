@@ -1,2 +1,0 @@
-We will also offer a separate app which enables the same notifications and capabilities as the modular solution. 
-Additionally, it is possible to add your own locations if you wish to receive notifications for other places than your current location.

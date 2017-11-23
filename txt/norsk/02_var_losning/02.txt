@@ -1,3 +1,0 @@
-InfoLight har en enorm rekkevidde og presisjon i ett og samme system. Løsningen gir nødetater og andre offentlige instanser mulighet til skreddersy varsler og sende disse direkte til brukere i et spesifikt geografisk område. 
-Brukere med varslings-klare apper vil da bli varslet om de befinner seg i varslingsområdet. 
-Så lenge varslene er aktive, vil også nye brukere med som beveger seg inn i det gjeldende området motta disse.

@@ -1,6 +1,0 @@
-Set in an information- and society-aware focus, helping to build Norway's new emergency alert platform is exclusively positive. 
-After all, it is best for society to get the most alert when emergency situations and extraordinary events occur. 
-A notification-ready app will also significantly increase the likelihood that the user activates location services in the mobile app. 
-This in combination with increased media coverage will reflect and lead to increased trust within the user base.
-In order to further lower the threshold for implementation, developers may also apply for subsidies for development and integration of the emergency notification-module. 
-More information about the application process can be found at the Department of ICT and renewal.

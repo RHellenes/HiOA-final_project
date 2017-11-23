@@ -1,4 +1,0 @@
-Vår modulære løsning gjør det lettvint for apputviklere å integrere nødvarsling fra InfoLight i egne mobilapper. 
-Så snart modulen er implementert fra utviklernes side og appen er oppdatert på brukers smarttelefon, er den “varslings-klar”. 
-Etter oppdatering av appen, vil bruker bli forespurt om det er ønskelig å aktivere nødvarsler, og det er da opp til brukeren å ta i bruk funksjonaliteten. 
-Brukeren kan selv aktivere eller deaktivere nødvarslinger i appen etter eget ønske.

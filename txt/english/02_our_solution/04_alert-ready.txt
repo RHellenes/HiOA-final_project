@@ -1,4 +1,0 @@
-Our modular solution makes it easy for app developers to integrate emergency notification from InfoLight into their own mobile apps. 
-As soon as the module is implemented by developers and the app is updated on the user's smartphone, it is "alert-ready." 
-After updating the app, users will be requested if it is desirable to enable emergency notifications, and it is up to the user to use the functionality. 
-The user can enable or disable emergency notifications in the app, as desired.

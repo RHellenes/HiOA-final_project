@@ -1,2 +1,0 @@
-For de som ønsker, tilbyr vi en egen app-løsning som muliggjør de samme varslene og funksjonalitetene som gjennom varslings-klare apper. 
-I tillegg kan man legge til egne lokasjoner om man ønsker varsler fra andre steder enn gjeldende posisjon. 
