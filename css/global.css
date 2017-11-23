@@ -333,6 +333,74 @@ h3 {
     transform: skew(20deg,0deg); 
 }
 
+/*   herfra har julie jobbet:    */
+footer {
+	background-color: #F2F4FA;
+	color: #192042;
+	width: 100%;
+	height: 50%;
+	font-family: "Roboto", condensed;
+	font-size: 0.82em;
+}
+
+footer #logo {
+	max-width: 40%;
+	height: auto;
+	margin-left: 10%;
+}
+
+footer h1 {
+	font-size: 1.1em;
+	font-weight: medium;
+	margin: 0;
+	padding: 2%;
+}
+
+
+.madeBy, .affiliation {
+	max-width: 50%;
+	max-height: auto; 
+	margin-left: 0;
+	margin-right: auto;
+	padding: 0% 0% 0% 10%;
+	
+}
+
+.madeBy ul {
+	padding: 0;
+	margin: 0;
+}
+.madeBy li {
+	list-style-type: none;
+	list-style: none;
+	margin: 0;
+}
+
+.affiliation {
+	float: right;
+}
+
+.affiliation img {
+	max-width: 35%;
+	max-height: 35%;
+}
+
+.madeBy {
+	float: left;
+} 
+
+.publishedSubject {
+	max-width: 100%
+	height: 20%;
+}
+
+/* jeg vil ha all teksten i .publishedSubject på én linje for mobilversjon, men får det ikke til! 'Published' henger igjen oppi med de andre. */ 
+
+
+
+
+
+
 @media only screen and (min-width: 586px){
 	.section_1,
 	.section_2{
@@ -443,6 +511,7 @@ h3 {
 
 /*////////   Desktop    /////////*/
 @media only screen and (min-width: 1200px){
+
 
 }
 
