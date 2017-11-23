@@ -1,0 +1,53 @@
+<h1>Our solution</h1>
+
+<ul>
+	<li>Emergency alerts that can be tailored specifically for the user's location.</li>
+	<li>Easier to receive relevant information than to search for it yourself.</li>
+	<li>Enormous reach and precision with a simple solution.</li>
+	<li>Simple and flexible integration.</li>
+	<li>Giving users in the area instructions via InfoLight,  emergency services precious time and space to do their job.</li>
+	<li>By integrating with already established apps, we can reach out to most people.</li>
+	<li>PR-friendly profile and governmental subsidized development</li>
+</ul>
+
+<h2>Reaches most people</h2>
+
+<p>
+	InfoLight has a huge range and precision in one single system. 
+	The solution allows emergency services and other public agencies to customize alerts and send them directly to users in a specific geographic area. 
+	Users with notification-ready apps will then be notified if they are in the alerted area. As long as the alerts are active, new users with who move into the alerted area will also receive these notifications.
+</p>
+
+<h2>Easier to receive</h2>
+
+<p>
+	By using apps that already have a large user base, we can reach a large part of the population even in the startup phase. 
+	This system makes it easier to receive information than if you had to search it for yourself in stressful situations.
+</p>
+
+<h2>"Alert-ready" apps</h2>
+
+<p>
+	Our modular solution makes it easy for app developers to integrate emergency notification from InfoLight into their own mobile apps. 
+	As soon as the module is implemented by developers and the app is updated on the user's smartphone, it is "alert-ready." 
+	After updating the app, users will be requested if it is desirable to enable emergency notifications, and it is up to the user to use the functionality. 
+	The user can enable or disable emergency notifications in the app, as desired.
+</p>
+
+<h2>PR-friendly</h2>
+
+<p>
+	From a public relations point-of-view, helping to build Norway's new emergency alert platform is exclusively positive. 
+	After all, it is society's best interest to be able to alert as many as possible when emergency situations and extraordinary events occur. 
+	Also, a notification-ready app will significantly increase the likelihood that the user activates location services in the mobile app. 
+	This in combination with increased media coverage will reflect and lead to increased trust within the user base.
+	In order to further lower the threshold for implementation, developers may also apply for subsidies for development and integration of the emergency notification-module. 
+	More information about the application process can be found at the Department of ICT and renewal.
+</p>
+
+<h2>Standalone app</h2>
+
+<p>
+	We will also offer a separate app which enables the same notifications and capabilities as the modular solution. 
+	Additionally, it is possible to add your own locations if you wish to receive notifications for other places than your current location.
+</p>
