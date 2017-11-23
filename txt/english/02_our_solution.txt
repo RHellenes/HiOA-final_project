@@ -12,6 +12,10 @@
 
 <h2>Reaches most people</h2>
 
+<div class="blikkfang">
+.. directly to users in a specific geographic area.
+</div>
+
 <p>
 	InfoLight has a huge range and precision in one single system. 
 	The solution allows emergency services and other public agencies to customize alerts and send them directly to users in a specific geographic area. 
@@ -21,8 +25,8 @@
 <h2>Easier to receive</h2>
 
 <p>
-	By using apps that already have a large user base, we can reach a large part of the population even in the startup phase. 
-	This system makes it easier to receive information than if you had to search it for yourself in stressful situations.
+	It's easier to receive information than to seek it yourself, especially if you are in the middle of a critical situation.
+	By using apps that already have a large user base, we can reach and alert a large part of the population, even in the startup phase. 
 </p>
 
 <h2>"Alert-ready" apps</h2>

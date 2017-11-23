@@ -10,6 +10,11 @@
 </ul>
 
 <h2>Enorm rekkevidde</h2>
+
+<div class="blikkfang">
+.. direkte til brukere i et spesifikt geografisk område.
+</div>
+
 <p>
 	InfoLight har en enorm rekkevidde og presisjon i ett og samme system. 
 	Løsningen gir nødetater og andre offentlige instanser mulighet til skreddersy varsler og sende disse direkte til brukere i et spesifikt geografisk område. 
@@ -18,10 +23,11 @@
 </p>
 
 <h2>Lettere å motta</h2>
+
 <p>
-	Det er lettere å motta informasjon enn å oppsøke den selv. Dette gjelder spesielt hvis man er i en krisesituasjon. 
+	Det er lettere å motta informasjon enn å oppsøke den selv, spesielt hvis man er i en krisesituasjon.
 	Ved å bruke apper som allerede har en stor brukergruppe kan vi nå frem til og varsle en stor del av befolkningen, selv i oppstartsfasen.
-	Dette systemet muligjør
+
 </p>
 
 <h2>Varsling-klare apper</h2>
