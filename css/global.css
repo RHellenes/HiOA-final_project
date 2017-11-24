@@ -15,10 +15,12 @@ font-family: 'Roboto Condensed', sans-serif;*/
 
 body {
 	width: 100%;
-
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
-	height: 1000px;
+	background-color: #fefefe;
 	padding-top:70px;
 
 
@@ -29,22 +31,17 @@ header {
 	top: 0;
 
 	border-bottom: 1px solid #f1f1f1;
-	background-color: #fff;
+	background-color: #fefefe;
 	height: 70px;
 	overflow: hidden;
 	transition: all 0.4s;
 	z-index:1000;
-
-
 }
-
-
-
 .open_menu{
 	height:100vh;
 	background-color: #192042;
 	transition: all .4s;
-	color: #fff;
+	color: #fefefe;
 }
 .logo_area {
 	height: 48px;
@@ -60,8 +57,8 @@ header {
 	margin: 9px 0;
 }
 .white_svg_fill{
-	fill:#ffffff !important;
-	color: #ffffff;
+	fill:#fefefe !important;
+	color: #fefefe;
 }
 .menu_icon{
 	float: right;
@@ -115,7 +112,7 @@ header {
 	transition: all .3s;	
 }
 .white_text{
-	color: #fff;
+	color: #fefefe;
 	transition: all .3s;
 }
 .rotate1{
@@ -222,7 +219,7 @@ nav ul li:hover{
 }
 
 #lang_pos-ctrl a{
-	color:#B3B4C3;
+	color:#95a6bb;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 2em;
@@ -266,55 +263,133 @@ nav ul li:hover{
 .remove_nav-active{
 	display: block;
 }
-
+/*/////////////   Innhold   /////////////*/
 
 main {
+	width: 100%;
+	margin: 0;
+
+}
+section{
+	width: 90%;
+	margin: 20px 5%;
+	float: left;
+}
+
+
+h1,
+h2,
+h3{
+	font-family: "Roboto Condensed", condensed;
+	margin: 2.6rem 0 0 0;
+	width: 100%;
+	color: #192042;
+	float: left;
+	display: block;
+	clear: both;
 	
 }
-#forsidebilde {
-	max-width: 60%;
-	margin-left: 20%;
+main section > h1{
+	font-size: 3em;
+	font-weight: 700;
+	text-align: center;
+}
+main section > h1::after{
+	content: " ";
+	width: 80%;
+	margin: 0 0 0 10%;
+	height: 5px;
+	background-color: #f2f2f2;
+	float: left;
+	display: block;
+	-ms-transform: skew(-25deg,0deg);
+    -webkit-transform: skew(-25deg,0deg);
+    transform: skew(-25deg,0deg);
+	}
+
+
+
+
+
+
+main section > h2 {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+main section > h2::after{
+		content: " ";
+		width: 1.5em;
+		margin: 0 calc(100% - 3em) 0 -1px ;
+		height: 5px;
+		background-color: #f2f2f2;
+		float: left;
+		display: block;
+		-ms-transform: skew(-25deg,0deg);
+    	-webkit-transform: skew(-25deg,0deg);
+    	transform: skew(-25deg,0deg);
+	}
+
+main section > h3 {
+	font-size: 1.8em;
+	font-weight: 400;
+
 }
 main p {
 	font-family: "Roboto", sans-serif;
-	font-size: 0.82em;
-	letter-spacing: 0.1px;
-	padding: 0% 5% 0% 10%;
+	font-size: 1.1em;
+	letter-spacing: 0.2px;
+	line-height: 1.5em;
+	margin: .75em 0;
+	float: left;
+
 }
 
-h2 {
-	padding: 0% 5%;
-	font-family: "Roboto Condensed", condensed;
-	font-size: 2.3em;
-	color: #192042;
-	font-weight: bold;
-	text-align: center;
+
+.liste_i_tekst{
+	margin: 0;
+	list-style: none;
+	padding-left: 20px;
 }
 
-h3 {
-	padding: 0% 5% 0% 10%;
-	font-family: "Roboto Condensed", condensed;
-	font-size: 1.4em;
-	margin: 18% 0% 5% 0%;
-	font-weight: bold;
-}
 
-.utheving {
-	height: auto;
+main section .large_image_area{
 	width: 100%;
+	/*height: 400px;*/ /* Temp */
+	margin: 0;
+	background-color: #f2f2f2;
+	float: left;
+	display: block;
 
 }
 
-#blikkfang {
+.large_image_area > figcaption{
+	float: left;
+	font-size: 0.9rem;
+	padding: 0.8em 1em 1.3em 0.8em;
+	width: 100%;
+	height: auto;
+	border-top: solid 2px #fff;
+	color:#192042;
+}
+
+
+.blikkfang {
 	font-family: "Roboto", sans-serif;
 	font-size: 0.9em;
 	margin: 10% 0%;
 	width: 94%;
 	padding: 0% 5% 0% 9%;
 	font-weight: 300;
+	font-size: 1.4em;
+	margin: 2.25rem 0%;
+	width: 90%;
+	float: left;
+	display: block;
+	height: calc(3rem + 15px);
+
 }
 
-#blikkfang::before {
+.blikkfang::before {
 	content:" ";
 	-ms-transform: skew(0deg,-25deg);
     -webkit-transform: skew(0deg,-25deg);
@@ -408,31 +483,39 @@ footer h1 {
 		float: left;
 		margin: 0 2.5%;
 	}
-	.open_menu{
-
+	main section > p{
+		font-size: 1.2em;
 	}
+
 }
 
 
 /*////////   Tablet-stående    /////////*/
 @media only screen and (min-width: 786px){
-
+	main{
+		width: 85%;
+	}
+	
 }
 
 
 /*////////   Tablet-liggende/ liten desktop versjon /////////*/
 @media only screen and (min-width: 1024px){ 
+	header{
+		background-color: #fefefe;
+	}
 	.menu_icon,
 	.nav_title{
 		display: none;
 	}
 	.open_menu{
 		height:70px;
+		background-color: #fefefe;
 	}
 
 	.logo_area{
 		width: 18%;
-		background-color: #fff;
+		
 
 	}
 	#fill_override{
@@ -442,7 +525,7 @@ footer h1 {
 		width: 82%;
 		float: left;
 		height: 70px;
-		margin: 0;
+		margin: 0 0 0 0%;
 		display: block;
 		padding-bottom: 0;
 	}
@@ -489,6 +572,7 @@ footer h1 {
 
 	}
 	#lang_pos-ctrl a{
+		color: #4D5C6F;
 		padding-top: .8em;
 		font-size: 1.6em;
 		width: 34%;
@@ -503,16 +587,46 @@ footer h1 {
 	}
 
 	#color_override{
-		background-color: #fff;
+		background-color: #fefefe;
+	}
+	main section > hr,
+	main section > h1,
+	main section > h2,
+	main section > h3,
+	main section > p{
+		width: 70%;
+		margin-left: 20%;
+	}
+	main section > p{
+		font-size: 1.4em;
+	}
+	
+
+	.blikkfang{
+		width: 60%;
+		font-size: 2rem;
+		margin: 1.3rem 0 1.3rem 25%;
+		height: calc(4rem + 15px);
+
+	}
+	.blikkfang::before{
+		width: 9px;
+	}
+	main section > h2{
+
 	}
 
 
 }
-
+@media only screen and (min-width: 1100px){
+	
+}
 /*////////   Desktop    /////////*/
-@media only screen and (min-width: 1200px){
-
-
+@media only screen and (min-width: 1254px){
+	nav{
+	width: 70%;
+	margin: 0 0 0 7.5%;
+	}
 }
 
 /* Skriv under hver av de ulike skjermstørrelser! Mobil først. 

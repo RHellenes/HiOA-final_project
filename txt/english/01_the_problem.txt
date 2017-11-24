@@ -1,0 +1,32 @@
+<h1>The Problem</h1>
+<p>
+Do you know someone who has experienced an emergency where they have not received any information or follow-up? "What's going on?" "Where am I safe?" "What can I do?" These are questions that often arise during emergencies. 
+In these situations, when time is an issue, It may also be difficult to find relevant information quickly, which could lead to misunderstandings and potentially dangerous situations.
+To date there is no digital platform for emergency notifications in Norway. We are InfoLight and we seek to supply a solution to this problem.
+</p>
+
+<h2>A modern society</h2>
+<p>
+	In today's society we have technological solutions for almost everything, and the modern citizen is steadily approaching an entirely digital life. 
+	Digital solutions are both practical, fast, and they simplify our lives in countless ways. There are apps for nearly any situation, but in emergencies relevant information might be hard to find.
+</p>
+
+<h2>Dated Solutions</h2>
+
+<div class="blikkfang">
+	The civil defence sirens and mass media .. are the only official tools for alerting the citizens in a crisis.
+</div>
+
+<p>
+	Lives might be at stake, and it might be difficult to keep calm in stressful situations. 
+	Simple tasks like navigating to information on your smartphone, can be extremely demanding under pressure. 
+	During such events time is of an essence, and those precious minutes we spend to find information should rather be used on staying safe and helping others.
+	Today’s norwegian solution consists of the civil defense sirens(tornado siren) and mass media, and these are the only official tools for alerting the citizens in a crisis. 
+	As of today, there is no digital solution that communicates the message directly to the public in Norway. 
+
+<h2>Misinformation</h2>
+<p>
+Poor information flow might lead rumours and misinformation. 
+As a result of this, some may even seek out the situation out of curiosity rather than keeping distance. 
+This might even result in additional difficulties and tasks for the police and emergency services, when they rather should spend time on saving lives.
+</p>
