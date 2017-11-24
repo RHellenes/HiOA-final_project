@@ -1,0 +1,55 @@
+<h1>Vår løsning</h1>
+<ul>
+	<li>Nødvarsler skreddersydd til brukernes lokasjon.</li>
+	<li>Enklere å motta relevant informasjon enn å oppsøke den selv.</li>
+	<li>Enorm rekkevidde og presisjon med en enkel løsning.</li>
+	<li>Enkel og fleksibel integrasjon.</li>
+	<li>Ved å gi brukere i området instrukser via InfoLight, kan gi nødetater få rom til å jobbe med det de egentlig skal.</li>
+	<li>Ved integrering med allerede etablerte apper når vi ut til folk flest.</li>
+	<li>Samfunnsbevisst profil og subsidiert utvikling</li>
+</ul>
+
+<h2>Enorm rekkevidde</h2>
+
+<div class="blikkfang">
+.. direkte til brukere i et spesifikt geografisk område.
+</div>
+
+<p>
+	InfoLight har en enorm rekkevidde og presisjon i ett og samme system. 
+	Løsningen gir nødetater og andre offentlige instanser mulighet til skreddersy varsler og sende disse direkte til brukere i et spesifikt geografisk område. 
+	Brukere med varslings-klare apper vil da bli varslet om de befinner seg i varslingsområdet. 
+	Så lenge varslene er aktive, vil også nye brukere med som beveger seg inn i det gjeldende området motta disse.
+</p>
+
+<h2>Lettere å motta</h2>
+
+<p>
+	Det er lettere å motta informasjon enn å oppsøke den selv, spesielt hvis man er i en krisesituasjon.
+	Ved å bruke apper som allerede har en stor brukergruppe kan vi nå frem til og varsle en stor del av befolkningen, selv i oppstartsfasen.
+
+</p>
+
+<h2>Varsling-klare apper</h2>
+<p>
+	Vår modulære løsning gjør det lettvint for apputviklere å integrere nødvarsling fra InfoLight i egne mobilapper. 
+	Så snart modulen er implementert fra utviklernes side og appen er oppdatert på brukers smarttelefon, er den “varslings-klar”. 
+	Etter oppdatering av appen, vil brukeren bli forespurt om det er ønskelig å aktivere nødvarsler, og det er da opp til brukeren å ta i bruk funksjonaliteten. 
+	Brukeren kan selv aktivere eller deaktivere nødvarslinger i appen etter eget ønske.
+</p>
+
+<h2>Samfunnsbevisst profil</h2>
+<p>
+	Satt i et informasjon- og samfunnsbevisst lys, er det å bidra til å bygge norges nye nødvarslings-plattform utelukkende positivt. 
+	Det er tross alt til samfunnets beste om flest mulig får muligheten til å bli varslet ved nødssituasjoner og ekstraordinære hendelser. 
+	En varslings-klar app vil også øke sannsynligheten betraktelig for at brukeren aktiverer stedtjenester i mobilappen i det hele tatt. 
+	Dette i kombinasjon med økt mediedekning vil reflektere og føre til økt tillit innad i egen brukerbase.
+	For ytterligere å senke terskelen for implementering, er det også mulig for utviklere å søke om statlige subsidier til utvikling og integrering  av nødvarslings-modulen. 
+	Mer info om søknadsprosessen finnes hos Avdeling for IKT og fornying.
+</p>
+
+<h2>Egen app-løsning</h2>
+<p>
+	For de som ønsker, tilbyr vi en egen app-løsning som muliggjør de samme varslene og funksjonalitetene som gjennom varslings-klare apper. 
+	I tillegg kan man legge til egne lokasjoner om man ønsker varsler fra andre steder enn gjeldende posisjon.
+</p>

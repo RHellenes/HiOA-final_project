@@ -400,6 +400,9 @@ main p {
 
 /*////////   Tablet-liggende/ liten desktop versjon /////////*/
 @media only screen and (min-width: 1024px){ 
+	header{
+		background-color: #fefefe;
+	}
 	.menu_icon,
 	.nav_title{
 		display: none;
