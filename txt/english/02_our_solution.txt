@@ -1,6 +1,10 @@
 <h1>Our solution</h1>
+<<<<<<< HEAD
 
 <ul>
+=======
+<div class='liste_i_tekst'>
+>>>>>>> Innhold
 	<li>Emergency alerts that can be tailored specifically for the user's location.</li>
 	<li>Easier to receive relevant information than to search for it yourself.</li>
 	<li>Enormous reach and precision with a simple solution.</li>
@@ -9,6 +13,10 @@
 	<li>By integrating with already established apps, we can reach out to most people.</li>
 	<li>PR-friendly profile and governmental subsidized development</li>
 </ul>
+<<<<<<< HEAD
+=======
+</div>
+>>>>>>> Innhold
 
 <h2>Reaches most people</h2>
 
@@ -30,7 +38,10 @@
 </p>
 
 <h2>"Alert-ready" apps</h2>
+<<<<<<< HEAD
 
+=======
+>>>>>>> Innhold
 <p>
 	Our modular solution makes it easy for app developers to integrate emergency notification from InfoLight into their own mobile apps. 
 	As soon as the module is implemented by developers and the app is updated on the user's smartphone, it is "alert-ready." 
