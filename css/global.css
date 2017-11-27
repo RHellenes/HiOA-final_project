@@ -271,6 +271,7 @@ nav ul li:hover{
 main {
 	
 }
+
 #forsidebilde {
 	max-width: 60%;
 	margin-left: 20%;
@@ -345,7 +346,7 @@ footer {
 }
 
 footer #logo {
-	max-width: 40%;
+	max-width: 36%;
 	height: auto;
 	margin-left: 10%;
 }
@@ -389,9 +390,7 @@ footer #logo {
 	width: 100%;
 	clear: both;
 	float: left;
-}
-
-/* jeg vil ha all teksten i .publishedSubject på én linje for mobilversjon, men får det ikke til! 'Published' henger igjen oppi med de andre. */ 
+}		
 
 
 
@@ -408,12 +407,54 @@ footer #logo {
 	.open_menu{
 
 	}
-}
 
+	footer #logo {
+		max-width: 35%;
+		height: auto;
+		margin-left: 10%;
+	}
+
+
+	.miniArticle img {
+		width: 45%;
+		height: 45%;
+	} 
+}
 
 /*////////   Tablet-stående    /////////*/
 @media only screen and (min-width: 786px){
 
+	.miniArticle {
+		width: 29%;
+		height: auto; 
+		margin-left: 4%;
+		margin-right: auto;
+		padding: 3% 1% 2% 5%;
+		display: block;
+		float: left;
+	}
+
+	.miniArticle ul {
+		padding: 0;
+		margin: 0;
+	}
+	.miniArticle li {
+		list-style-type: none;
+		list-style: none;
+		margin: 0;
+	}
+
+
+	.miniArticle img {
+		width: 50%;
+		height: 50%;
+	} 
+
+	.publishedSubject {
+		width: 100%;
+		clear: both;
+		float: left;
+	}		
 }
 
 
