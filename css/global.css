@@ -414,11 +414,37 @@ footer #logo {
 		margin-left: 10%;
 	}
 
+	.miniArticle {
+		width: 29%;
+		height: auto; 
+		margin-left: 4%;
+		margin-right: auto;
+		padding: 3% 1% 2% 5%;
+		display: block;
+		float: left;
+	}
+
+	.miniArticle ul {
+		padding: 0;
+		margin: 0;
+	}
+	.miniArticle li {
+		list-style-type: none;
+		list-style: none;
+		margin: 0;
+	}
+
 
 	.miniArticle img {
-		width: 45%;
-		height: 45%;
+		width: 50%;
+		height: 50%;
 	} 
+
+	.publishedSubject {
+		width: 100%;
+		clear: both;
+		float: left;
+	}
 }
 
 /*////////   Tablet-stående    /////////*/
