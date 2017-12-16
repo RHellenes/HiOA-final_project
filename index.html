@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>HiOA Final Project</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
+	<meta name="description" content="A website that showcase a problem about comunity warning/ alerts and presents a possible solution, made as a school assignment at HiOA (University College of Oslo and Akershus).">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
 
 </head>
@@ -15,11 +15,8 @@
 	<header class="header" id="header">
 		<div class="logo_area">
 			<a href="index.html" tabindex="1"> <!-- Logo -->
-				<svg role="img" aria-label="InfoLight logo + The Infolight logo in its standard navy blue color"
-				 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 163.5 48.2" style="enable-background:new 0 0 163.5 48.2;" xml:space="preserve">
-				 <title>Infolight's logo</title>
-				 <desc>The Infolight logo in its standard navy blue color</desc>
 					<style type="text/css">
 						.st1{fill:#192042;}
 					
@@ -35,7 +32,7 @@
 						<path class="st1" id="fill_override" d="M35.4,27.6V39h-5.2V27c0-2.2-1.5-3.6-3.3-3.6c-2.2,0-3.5,1.6-3.5,3.7V39h-5.2V19.2h5.1v2.3
 							c0.8-1.4,2.7-2.8,5.3-2.8C34.2,18.7,35.4,23.4,35.4,27.6z"/>
 						<path class="st1" id="fill_override" d="M40.2,23.5h-2.1v-4.2h2.1v-0.7c0-5.1,3.4-6.8,7.3-6.8c0.8,0,1.3,0,1.7,0.1v4.4c-0.1,0-0.6-0.1-1-0.1
-							c-1.8,0-2.8,0.8-2.8,2.6v0.6h3.4v4.2h-3.4V39h-5.2V23.5z"/>
+							c-1.8,0-2.8,0.8-2.8,2.6v0.6h2.4v4.2h-3.4V39h-5.2V23.5z"/>
 						<path class="st1" id="fill_override" d="M60.8,18.7c6.1,0,10.7,4.5,10.7,10.4S67,39.5,60.8,39.5c-6.2,0-10.6-4.4-10.6-10.3
 							C50.2,23.2,54.8,18.7,60.8,18.7z M60.8,34.9c3.1,0,5.4-2.3,5.4-5.7s-2.3-5.8-5.4-5.8c-3.1,0-5.4,2.4-5.4,5.8
 							C55.4,32.5,57.7,34.9,60.8,34.9z"/>
@@ -48,19 +45,19 @@
 							C115.3,25.7,113.2,23.3,110.2,23.3z"/>
 						<path class="st1" id="fill_override" d="M141.6,27.6V39h-5.2V27c0-2.2-1.5-3.6-3.3-3.6c-2.2,0-3.6,1.6-3.6,3.7V39h-5.2V11.7h5.2v9.9
 							c0.8-1.4,2.6-2.8,5.2-2.8C140.4,18.7,141.6,23.4,141.6,27.6z"/>
-						<path class="st1" id="fill_override" d="M146,15.1h5.1v4.2h3.7v4.2h-3.7v7.6c0,3,0.9,3.6,2.9,3.6c0.3,0,0.5,0,0.9,0v4.5c0,0-0.8,0.2-2.2,0.2
+						<path class="st1" id="fill_override" d="M146,15.1h5.1v4.2h2.7v4.2h-3.7v7.6c0,3,0.9,3.6,2.9,3.6c0.3,0,0.5,0,0.9,0v4.5c0,0-0.8,0.2-2.2,0.2
 							c-4.7,0-6.8-2.6-6.8-8v-7.8h-2.1v-4.2h2.1V15.1z"/>
 					</g>
 				</svg>
 			</a>
 		</div>
 
-			<a href="#" class="menu_icon" onclick="mobile_nav()">
+			<button class="menu_icon" onclick="mobile_nav()">
 			
 				<div class="line1"></div>
-				<div class="icon_text">Meny</div>
+				<div class="icon_text">Menu</div>
 				<div class="line2"></div>
-			</a>
+			</button>
 
 		
 
@@ -68,17 +65,17 @@
 			<div class="section_1">
 				<span class="nav_title">Content:</span>
 				<ul>
-					<a href="#" onclick="mobile_nav()">
+					<a href="#content_section_1"  onclick="mobile_nav()">
 						<li>
 							<p class="anti_skew">The Problem</p>
 						</li>
 					</a>
-					<a href="#" onclick="mobile_nav()">
+					<a href="#content_section_2" onclick="mobile_nav()">
 						<li>
 							<p class="anti_skew">Our Solution</p>
 						</li>
 					</a>
-					<a href="#" onclick="mobile_nav()">
+					<a href="#content_section_3" onclick="mobile_nav()">
 						<li>
 							<p class="anti_skew">About us</p>
 						</li>
@@ -87,11 +84,11 @@
 			</div>
 
 			<div class="section_2">
-				<span class="nav_title">Language:</span>
+				<span class="nav_title" lang="en">Language:</span>
 				<div id="lang_pos-ctrl">
-					<a href="#" id="active_lang">English</a>
+					<a href="index.html"  id="active_lang" lang="en">English</a>
 					<span>/</span>
-					<a href="#" >Norsk</a>
+					<a href="index_norwegian.html"  lang="no">Norsk</a>
 				</div>
 			</div>
 			
@@ -100,88 +97,193 @@
 
 	</header>
 
-
-
-
 	<main>
+			
 
+
+		<div class="image_cropper">
+			<h1>Emergency alerts made easy</h1>
+			<img src="images/problem.png" alt="An unfocused photograph of alot of people in the street" />
+		</div>
 		
+		
+		<div id="content_section_1"></div>
+
 		<section>
-			<h1>Problemet</h1>
-			<hr>
+			
+
+		<h1>The Problem</h1>
+
 		<p>
-			Kjenner du noen som har opplevd å være i en krisesituasjon der de ikke har fått noen som helst informasjon eller oppfølging? “Hva skjer?” “Hvor er jeg trygg?” “Hva kan jeg gjøre?” Dette er gjerne spørsmål som dukker opp om det oppstår en nødssituasjon. Ved krisesituasjoner er gode råd dyre,  og det er vanskelig å få den informasjonen man trenger på en enkel måte. I dag finnes det ingen digital plattform for krisevarsling i norge.
-			Dette ønsker vi i InfoLight å tilby en løsning på.
+			Do you know someone who has experienced an emergency where they have not received any information or follow-up? "What's going on?" "Where am I safe?" "What can I do?" These are questions that often arise during emergencies. In these situations, when time is an issue, It may also be difficult to find relevant information quickly, which could lead to misunderstandings and potentially dangerous situations.
+			To date there is no digital platform for emergency notifications in Norway. We are InfoLight and we seek to supply a solution to this problem
+
 		</p>
-			<p>
-				Dette er gjerne spørsmål som dukker opp om det oppstår en nødssituasjon. Ved krisesituasjoner er gode råd dyre,  og det er vanskelig å få den informasjonen man trenger på en enkel måte. I dag finnes det ingen digital plattform for krisevarsling i norge.
-				Dette ønsker vi i InfoLight å tilby en løsning på.
-			</p>
+		
 
-			<div id="blikkfang">
-				I dag finnes det ingen felles digital plattform for krisevarsling i norge.
-			</div>
+		<h2>A modern society</h2>
 
-			<h2>Overskrift om problemet</h2>
-			<p> 
-				Masse fin tekst med klokke ord, komma og meningsfulle setninger om problemet vi tilbyr en løsning på.
-				Masse fin tekst med klokke ord, komma og meningsfulle setninger om problemet vi tilbyr en løsning på.
-				Masse fin tekst med klokke ord, komma og meningsfulle setninger om problemet vi tilbyr en løsning på.
-			</p>
+		<p>
+			In today's society we have technological solutions for almost everything, and the modern citizen is steadily approaching an entirely digital life. Digital solutions are both practical, fast, and they simplify our lives in countless ways. There are apps for nearly any situation, but in emergencies relevant information might be hard to find.
+		</p>
 
-			<p>
-				Masse fin tekst med klokke ord, komma og meningsfulle setninger om problemet vi tilbyr en løsning på.
-				Masse fin tekst med klokke ord, komma og meningsfulle setninger om problemet vi tilbyr en løsning på.
-				Masse fin tekst med klokke ord, komma og meningsfulle setninger om problemet vi tilbyr en løsning på. 
-			</p>
+		<div class="blikkfang" id="norsk">
+			[...] the civil defence sirens and mass media [...] are the only official tools for alerting the citizens in a crisis.” 
+		</div>
 
+		<p>
+			Lives might be at stake, and it can be difficult to keep calm in stressful situations. Simple tasks like navigating to information on your smartphone, can be extremely demanding under pressure. During such events time is of an essence, and those precious minutes we spend to find information should rather be used on staying safe and helping others.
+			<br>
+			Today’s norwegian solution consists of the civil defense sirens(tornado siren) and mass media, and these are the only official tools for alerting the citizens in a crisis. “When the sirens sound” the citizens are encouraged to seek out information through radio and mass media. In other words there is no digital solution that communicates messages directly to the public in Norway, as of today.
 
-		<h2>Løsningen</h2>
-		<p> 
-			I dagens samfunn har vi gode teknologiske løsninger på det meste, og den moderne borger nærmer seg mer og mer en slags heldigital hverdag. Digitale løsninger er både praktiske og raske, og forenkler livene våre på utallige måter. Ved krisesituasjoner, derimot, er gode råd dyre. Per dags dato finnes det ingen digital plattform for krisevarsling i norge. </p>
+		</p>
 
-			<p>
-				Ved dårlig informasjonsflyt kan rykter oppstå og publikum blir feilinformert. Publikum kan også finne på å oppsøke situasjonene ut av nysgjerrighet, når de egentlig burde holde avstand. Dette kan skape store problemer for både Politi og utrykningstjenester. Fordi da blir det ekstra jobb og et annet fokus enn den jobben de egentlig har kommet for å gjøre. Det blir mer å holde styr på og når situasjonene er så alvorlige kan de komme ut av kontroll. 
-			</p>
+		<h2>Information flow</h2>
 
-			 
-			<p>
-				Med InfoLight har du en enorm rekkevidde i ett enkelt system. Med denne Plug-In-baserte løsningen kan kommuneledelsen nå ut til flest mulig ved å støtte opp under de lokale appene for kollektivtransport, værvarsling og mye mer. 
-			</p>
+		<p>
+			Poor information flow might lead to rumours and misinformation. As a result of this, some may even seek out the situation out of curiosity rather than keeping distance. This might result in additional difficulties and tasks for the police and emergency services, when they rather should spend time on saving lives.
+		</p>
 
-			<div class="utheving">
-				<div id="blikkfang">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</div>
-			</div>
-
-			<h3>Full funksjonalitet for mobilapplikasjoner</h3> 
-			<p>
-				InfoLight gir brukere av de lokale appene??Å? Mulighet til å få krisevarsling gjennom apper de allerede har på deres smarttelefon. Dette er en lokasjonsbasert tjeneste som du helt fritt kan velge å bruke, men som vil være sterkt anbefalt fra statlig og kommunal side. InfoLight er en felles varslingsplattform ved nødsituasjoner og kritiske hendelser basert på brukernes lokasjon. 
-			</p>
-
-			<h3>Gir brukere tilgang til viktig informasjon</h3> 
-			<p>
-				Ved å bruke apper som allerede har en stor brukergruppe kan vi nå frem til en stor del av befolkningen selv i oppstartsfasen. Dette systemet gjør det lettere å motta informasjon enn om du måtte oppsøke den selv i stressende situasjoner.
-			</p>
-
-			<h3>Integrer med InfoLight</h3>
-			<p> 
-				Ved å integreres med InfoLight beholder dere full kontroll over design og brukeropplevelse, men dere vil gi brukere en større mulighet enn ved å ha deres originale løsning uten vår Plug-in. Vi tilbyr de som allerede er store denne muligheten, men også mindre apper og løsninger vil kunne benytte seg av vår plattform for informasjonsdeling. 
-			</p>
-
-			<h3>Egen app-løsning med samme gode funksjonalitet</h3> 
-			<p>
-				For de som bor i utkanten og ikke har behov for apper for lokal kollektivtransport eller for de som er generelt interesserte gir vi dem mulighet til å få samme varsling og funksjonalitet i en egen InfoLight-app som kan lastes ned fra app-store og google-play. 
-			</p>
-
-			<h3>InfoLight gir sjåfører muligheter</h3>
-			<p>
-				Ved å få ut informasjon til de som bruker egen bil på jobb eller fritid kan man unngå at alle kjører inn i et område som allerede har fått stopp. Dette gir utrykningskjøretøy større plass å handle på og gjør det lettere å løse opp trafikken i etterkant. 
-			</p>
 	</section>
+	<div class="image_cropper">
+		<img src="images/solution.png" alt="A cellphone showing a alert about fire near the university college of Oslo og Akershus" />
+	</div>
+
+	<div id="content_section_2"></div>
+
+	<section>
+
+			<h1 >Our Solution</h1>
+			
+			<p>
+				Our solution is a notification system which integrates with already established apps. It can be used to warn citizens in a specific location, may it be a situation where life is at stake, or if emergency agencies need to keep the audience at a distance to be able to do their job.
+			</p>
+
+			<div class="blikkfang" id="norsk2">
+				[...] directly to users in a specific geographic area.
+			</div>
+
+			<p>
+				InfoLight has a huge range and precision in a single system. The solution allows emergency services and other public agencies to customize alerts and send them directly to users in a specific geographic area. Users with notification-ready apps will then be notified if they are in the alerted area. As long as the alerts are active, new users who move into the alerted area will also receive these notifications.
+			</p>
+			<div class="large_image_area">
+				<video id="laptop"  height="auto" autoplay controls>
+					<source src="videos/pc_send_warning_2.mp4" type="video/mp4">
+				</video>
+				<figcaption>
+				An animation showing how easy one can mark an area and send a warning</figcaption>
+			</div>
+			<h2>Easier to receive</h2>
+
+			<p>
+				It's easier to receive information than to seek it yourself, especially if you are in the middle of a critical situation. By using apps that already have a large user base, we can reach and alert a large part of the population, even in the startup phase.
+
+			</p>
+			<div class="large_image_area" id="smaller">
+				<video id="mobile" width="100%" height="auto" autoplay controls>
+					<source src="videos/mobile_notification_2.mp4" type="video/mp4">
+				</video>
+				<figcaption>
+				An animation illustrating how a push-message might look like.</figcaption>
+			</div>
+			<h2>Alert-ready apps</h2>
+			<p>
+				Our modular solution makes it easy for app developers to integrate emergency notification from InfoLight into their own mobile apps. As soon as the module is implemented by developers and the app is updated on the user's smartphone, it is "alert-ready." After updating the app, users will be requested if it is desirable to enable emergency notifications, and it is up to the user to use the functionality. The user can enable or disable emergency notifications in the app, as desired.
+			</p>
+<!-- 
+			<div class="blikkfang">
+				[...] økt tillit innad i egen brukerbase.
+			</div> -->
+
+			<h2>PR-friendly</h2>
+			<p>
+				From a public relations point-of-view, helping to build Norway's new emergency alert platform is exclusively positive. After all, it’s in all of society’s best interest to be able to alert the citizens when emergency situations and occur. Also, a notification-ready app will significantly increase the likelihood that the user activates location services in the mobile app. This in combination with increased media coverage will reflect and lead to increased trust within the user base.
+				<br>
+				In order to further lower the threshold for implementation, developers may also apply for subsidies for development and integration of the emergency notification-module <a href="https://www.regjeringen.no/no/dep/kmd/org/avdelinger/aif/id1589/">More information about the application process can be found at the Norwegian Government's Department of ICT and renewal</a>.
+
+			</p>
+
+			<h2>Standalone app</h2>
+			
+			<div class="large_image_area">
+				<img src="images/stand-alone_app.png" alt="Bilde som viser et eksempel på hvordan en egen stand-alone app kan se ut når den blir utviklet.
+				A picture showing an example on how a stand-alone app may look like when it gets developed.">
+				<figcaption>We will also offer a standalone app with some extra functionality.</figcaption>
+			</div>
+
+			<p>
+				We will also offer a standalone which enables the same notifications and capabilities as the modular solution. Additionally, it is possible to add your own locations if you wish to receive notifications for other places than your current location. 
+			</p>
+
+	</section>
+
+	<div id="content_section_3"> </div>
+
+	<section>
+		<h1>About us</h1>
+		<p>
+			We are a group of 7 students who call ourselves InfoLight, currently studying Applied Computer Technology at Oslo and Akershus University College. This is our solution to a problem we think is relevant to people's everyday lives and can provide a better experience of stressful situations and emergencies. The solution is meant to be subsidized by the state, which means this should be a non-profit solution.
+			 <a href="mailto:s326289@stud.hioa.no?Subject=Vedr.%20InfoLight"  target="_top"><img src="images/envelope.svg" class="mail-icon" alt="Email Icon"/>Feel free to contact us by email</a>  if you have any questions.
+		</p>
+	</section>
+	
 	</main>
-		<script type="text/javascript" src="js/scripts.js">
-	</script>
+
+	<footer>
+
+		<img src="images/InfoLight-logo.svg" alt="InfoLight's logo"/>
+
+		<div class="mini-art">
+			<div class="footer-title">
+				<h3>Made by:</h3>
+			</div>
+			<div class="footer-content">
+				<p>Amirhan s326322</p>
+				<p>Benjamin s236078</p>
+				<p>Jakkris s197101</p>
+				<p>Julie s326303</p>
+				<p>Lars Vidar s326313</p>
+				<p>Martin s326289</p>
+				<p>René s326265</p>
+			</div>
+		</div>
+
+		<div class="mini-art">
+			<div class="footer-title">
+				<h3>Affiliation:</h3>
+			</div>
+			<div class="footer-content">
+				<p>University College of Oslo and Akershus </p>
+				<img src="images/hioa-logo-en.png" alt="Logoen til Hørgskolen i Oslo og Akershus">
+			</div>
+		</div>
+
+		<div class="mini-art">
+			<div class="footer-title">
+				<h3>Published:</h3>
+			</div>
+			<div class="footer-content">
+				<p>03.12.17</p>
+			</div>
+
+			<div class="footer-title">
+				<h3>Subject:</h3>
+			</div>
+			<div class="footer-content">
+				<p>Webprojekt</p>
+			</div>
+
+			<div class="footer-title">
+				<h3>Contact:</h3>
+			</div>	
+			<div class="footer-content">
+				<a href="mailto:s326289@stud.hioa.no?Subject=Vedr.%20InfoLight" ><p>s326289@stud.hioa.no</p></a>
+			</div>
+
+		</div>
+
+	</footer> 
+
+	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

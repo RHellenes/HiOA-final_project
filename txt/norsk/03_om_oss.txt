@@ -1,0 +1,7 @@
+<h2>Om oss</h2>
+<p>
+	Vi er en gruppe på 7 studenter som kaller oss selv InfoLight, og vi studerer alle Anvendt Datateknologi ved Høgskolen i Oslo og Akershus.
+	Dette er løsningsforslaget vårt på et problem vi mener er relevant til folks hverdag og kan gi folk en bedre opplevelse av kritiske og stressende situasjoner. 
+	Løsningen er ment å være subsidiert av staten, som betyr at dette skal være en non-profit løsning.
+	Kontakt oss gjerne <a href="mailto:s326289@stud.hioa.no?Subject=Vedr.%20InfoLight" target="_top">på epost</a> om det er noe du lurer på.
+</p>

@@ -2,13 +2,18 @@
 * {
 	box-sizing: border-box;
 
-
 }
 *:focus{
 	outline: solid 2px orange !important;
 }
 *:active{
 	outline: 0px;
+} 
+/* En checker for om vi har husket å gi img en alt tekst  */
+img[alt=""],
+img[alt=" "],
+img:not([alt]){
+	border:5px dashed #c00;
 }
 
 /*font-family: 'Roboto', sans-serif;
@@ -16,10 +21,12 @@ font-family: 'Roboto Condensed', sans-serif;*/
 
 body {
 	width: 100%;
-
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
-
+	background-color: #fefefe;
 	padding-top:70px;
 
 
@@ -30,22 +37,17 @@ header {
 	top: 0;
 
 	border-bottom: 1px solid #f1f1f1;
-	background-color: #fff;
+	background-color: #fefefe;
 	height: 70px;
 	overflow: hidden;
 	transition: all 0.4s;
 	z-index:1000;
-
-
 }
-
-
-
 .open_menu{
 	height:100vh;
 	background-color: #192042;
 	transition: all .4s;
-	color: #fff;
+	color: #fefefe;
 }
 .logo_area {
 	height: 48px;
@@ -61,8 +63,8 @@ header {
 	margin: 9px 0;
 }
 .white_svg_fill{
-	fill:#ffffff !important;
-	color: #ffffff;
+	fill:#fefefe !important;
+	color: #fefefe;
 }
 .menu_icon{
 	float: right;
@@ -72,6 +74,8 @@ header {
 	margin: 10px 20px;
 	position: relative;
 	cursor: pointer;
+	background: none;
+	border: none;
 }
 .line1,
 .line2{
@@ -91,12 +95,11 @@ header {
 	letter-spacing: .9px;
 	text-align: center;
 	transition: all .3s;
-	font-size: 1.4em;
-	position: absolute;
+	font-size: 1.3rem;
+	position: relative;
 	color:#192042;
 	font-weight: 700;
-	float: left;
-	margin:9.2px 0px 0px 0px;
+
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -116,18 +119,18 @@ header {
 	transition: all .3s;	
 }
 .white_text{
-	color: #fff;
+	color: #fefefe;
 	transition: all .3s;
 }
 .rotate1{
-	top:20px;
+	top:21px;
 	transition: all .3s;
 	-ms-transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
 .rotate2{
-	bottom: 14px;
+	bottom: 12px;
 	transition: all .3s;
 	-ms-transform: rotate(135deg); 
     -webkit-transform: rotate(135deg); 
@@ -147,7 +150,12 @@ nav{
 	display: block;
 
 }
-
+#hidden_close_nav{
+	width: 100%;
+	height: 1000px;
+	opacity: 1;
+	float: left;
+}
 .section_1,
 .section_2{
 	float: left;
@@ -189,6 +197,8 @@ nav ul a{
 	text-decoration: none;
 	float: left;
 	width: 100%;
+	background-color: rgba(0,0,0,0);
+	border: none;
 }
 
 
@@ -218,7 +228,7 @@ nav ul li:hover{
 }
 
 #lang_pos-ctrl a{
-	color:#B3B4C3;
+	color:#95a6bb;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 2em;
@@ -262,47 +272,112 @@ nav ul li:hover{
 .remove_nav-active{
 	display: block;
 }
-
+/*/////////////   Innhold   /////////////*/
 
 main {
-	width: 90%;
-	margin: 0 5%;
+	width: 100%;
+	margin: 0;
+
+}
+.image_cropper{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%; 
+	height: 400px; 
+	overflow: hidden;
+	float: left;
+	background: #192042;
+	position: relative;
+}
+.image_cropper > img{
+	width: 190%;
+	margin:0;
+	height:auto;
+	opacity: 1;
+	z-index: 2;
+	align-self: center;
+}
+.image_cropper:first-of-type > img{
+	opacity: .6;
+}
+.image_cropper h1{
+	position: absolute;
+	bottom: 60px;
+	color: #F2C94C;
+	opacity: 1;
+	z-index: 3;
 
 }
 section{
-	width: 100%;
-	margin: 20px 0;
+	width: 90%;
+	margin: 20px 5%;
+	float: left;
 }
-#forsidebilde {
-	max-width: 60%;
-	margin-left: 20%;
+#content_section_1,
+#content_section_2,
+#content_section_3{
+	width: 100%;
+	height: 1px;
+	float: left;
 }
 
+
 h1,
-h2,
-h3{
+h2{
 	font-family: "Roboto Condensed", condensed;
-	margin: 2.6rem 0 1.3rem 0;
+	margin: 2.6rem 0 0 0;
 	width: 100%;
 	color: #192042;
 	float: left;
+	display: block;
+	clear: both;
 	
 }
 h1{
 	font-size: 3em;
 	font-weight: 700;
 	text-align: center;
-	margin-bottom:0.375rem;
+}
+h1::after{
+	content: " ";
+	width: 80%;
+	margin: 0 0 0 10%;
+	height: 5px;
+	background-color: #f2f2f2;
+	float: left;
+	display: block;
+	-ms-transform: skew(-25deg,0deg);
+    -webkit-transform: skew(-25deg,0deg);
+    transform: skew(-25deg,0deg);
+	}
 
+
+
+main > h1{
+	margin: 10px 0;
 }
 
-h2 {
-	font-size: 1.5em;
+
+main section > h2 {
+	font-size: 1.8em;
 	font-weight: 700;
 }
+main section > h2::after{
+		content: " ";
+		width: 1.5em;
+		margin: 0 calc(100% - 3em) 0 -1px ;
+		height: 5px;
+		background-color: #f2f2f2;
+		float: left;
+		display: block;
+		-ms-transform: skew(-25deg,0deg);
+    	-webkit-transform: skew(-25deg,0deg);
+    	transform: skew(-25deg,0deg);
+	}
 
-h3 {
-	font-size: 1.5em;
+main section > h3 {
+	font-size: 1.8em;
 	font-weight: 400;
 
 }
@@ -310,24 +385,20 @@ main p {
 	font-family: "Roboto", sans-serif;
 	font-size: 1.1em;
 	letter-spacing: 0.2px;
-	line-height: 1.3em;
+	line-height: 1.5em;
 	margin: .75em 0;
 	float: left;
 
 }
-main section hr{
-	width: 80%;
-	border:none;
-	height: 3px;
-	background-color: #192042;
-	margin: 0px 10% 2.6rem 10%;
-}
+
 
 .liste_i_tekst{
 	margin: 0;
 	list-style: none;
 	padding-left: 20px;
+	float: left;
 }
+
 .liste_i_tekst li{
 	margin: 3px 0;
 	font-size: 1.1em;
@@ -345,20 +416,56 @@ main section hr{
 }
 
 
+main section .large_image_area{
+	width: 100%;
+	margin: 10px 0 0 0 ;
+	float: left;
+	display: block;
+	overflow: hidden;
 
-#blikkfang {
+	border-top: solid 2px #f2f2f2;
+	border-left: solid 2px #f2f2f2;
+	border-right: solid 2px #f2f2f2;
+
+
+}
+.large_image_area img{
+	width: 150%;
+	margin-left: -20%;
+	height: auto;
+	}
+
+.large_image_area > figcaption{
+	float: left;
+	font-size: 0.9rem;
+	padding: 0.8em 1em 1.3em 0.8em;
+	width: 100%;
+	height: auto;
+	
+	color:#192042;
+	background-color: #f2f2f2;
+}
+.large_image_area video{
+		width: 101%;
+		margin-left: -0.5%;
+	}
+
+
+
+.blikkfang {
 	font-family: "Roboto", sans-serif;
+	padding: 0% 5% 0% 0%;
 	font-weight: 300;
-	font-size: 1.3em;
-	margin: 10% 0%;
+	font-size: 1.2em;
+	margin: 2.25rem 0%;
 	width: 90%;
 	float: left;
 	display: block;
-	height: calc(3.9rem + 15px);
+	
 
 }
 
-#blikkfang::before {
+.blikkfang::before {
 	content:" ";
 	-ms-transform: skew(0deg,-25deg);
     -webkit-transform: skew(0deg,-25deg);
@@ -366,8 +473,16 @@ main section hr{
     background-color: #F2C94C; 
     height: 100%;
     width: 8px;
-    margin: 0 2%;  
+    margin: 0 4%;  
     float: left;
+}
+
+#norsk{
+	height: calc(5rem + 15px);
+}
+
+#norsk2{
+	height: calc(2.1rem + 15px);	
 }
 
 .anti_skew{
@@ -377,6 +492,78 @@ main section hr{
     transform: skew(20deg,0deg); 
 }
 
+section p a img{
+	display: inline-block;
+	height: 1em;
+	width: auto;
+	margin: 0 5px -3px 0;
+}
+
+footer {
+	background-color: #FAFBFF;
+	color: #192042;
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	
+	float: left;
+	padding:10px 5% 2.5em 5%;
+	margin-top: 30px;
+}
+footer > img{
+	width: 60%;
+
+	clear: both;
+
+}
+
+footer h3{
+	font-weight: 400;
+}
+
+footer p{
+	font-weight: 300;
+}
+
+footer h3,
+footer p{
+	line-height: 1.2em;
+	font-size: 1rem;
+
+}
+
+.mini-art{
+	width: 100%;
+	float: left;
+	/*display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;*/
+}
+
+.footer-title{
+	width: 40%;
+	display: block;
+	float: left;
+}
+
+.footer-content{
+	width: 59%;
+	display: block;
+	float: left;
+}
+
+.footer-content img{
+	width: 75%;
+	height: auto;
+}
+
+@media only screen and (min-width:410px){
+	#norsk{
+		height: calc(3.5rem + 15px);
+	}
+
+}
+
+
 @media only screen and (min-width: 586px){
 	.section_1,
 	.section_2{
@@ -384,31 +571,77 @@ main section hr{
 		float: left;
 		margin: 0 2.5%;
 	}
-	.open_menu{
+	main section > p{
+		font-size: 1.2em;
+	}
+	footer > img{
+		width: 70%;
+		float: left;
+	}
+	.mini-art{
+		width: 49%;
+	}
+	.mini-art:nth-child(4){
+		clear: both;
+	}
+	.image_cropper > img{
+		width: 130%;
+	}	
 
+	
+
+}
+
+@media only screen and (min-width: 614px){
+	#norsk{
+		height: calc(2rem + 15px);
+	}
+	#norsk2{
+		height: calc(1rem + 15px);
 	}
 }
 
-
 /*////////   Tablet-stående    /////////*/
 @media only screen and (min-width: 786px){
+	main{
+		width: 85%;
+	}
+	footer > img{
+		width: 40%;
+		margin-right: 20%;
 
+	}
+	.mini-art:nth-child(2){
+		clear: left;
+	}
+	.image_cropper > img{
+		width: 100%;
+	}	
+	
+	#smaller video{
+		width: 60%;
+		margin-left: 20%;
+	}
 }
 
 
 /*////////   Tablet-liggende/ liten desktop versjon /////////*/
 @media only screen and (min-width: 1024px){ 
+	header{
+		background-color: #fefefe;
+	}
 	.menu_icon,
 	.nav_title{
 		display: none;
 	}
 	.open_menu{
 		height:70px;
+		background-color: #fefefe;
 	}
 
 	.logo_area{
 		width: 18%;
-		background-color: #fff;
+		
 
 	}
 	#fill_override{
@@ -418,7 +651,7 @@ main section hr{
 		width: 82%;
 		float: left;
 		height: 70px;
-		margin: 0;
+		margin: 0 0 0 0%;
 		display: block;
 		padding-bottom: 0;
 	}
@@ -465,6 +698,7 @@ main section hr{
 
 	}
 	#lang_pos-ctrl a{
+		color: #4D5C6F;
 		padding-top: .8em;
 		font-size: 1.6em;
 		width: 34%;
@@ -479,15 +713,118 @@ main section hr{
 	}
 
 	#color_override{
-		background-color: #fff;
+		background-color: #fefefe;
 	}
 
 
-}
+	main section > h1,
+	main section > h2,
+	main section > p,
+	.liste_i_tekst,
+	main section .large_image_area{
+		width: 70%;
+		margin-left: 20%;
+	}
+	main section > p,
+	.liste_i_tekst{
+		font-size: 1.4em;
+		padding: 0;
+	}
 
+	.liste_i_tekst li{
+		margin: 10px 0;
+	}
+	
+	.liste_i_tekst li::before{
+		margin-top: 12px;
+	}
+	.image_cropper {
+		height: 500px;
+	}
+	.blikkfang{
+		width: 70%;
+		font-size: 2rem;
+		margin: 1.3rem 0 1.3rem 15%;
+		height:calc(5.5rem + 15px);
+
+	}
+	.blikkfang::before{
+		width: 9px;
+
+	}
+	main section > h2{
+
+	}
+	footer > img{
+	width: 20%;
+	margin-right: 60%;
+
+	clear: both;
+
+	}
+
+	footer h3{
+		font-weight: 400;
+	}
+
+	footer p{
+		font-weight: 300;
+	}
+
+	footer h3,
+	footer p{
+		line-height: 1.2em;
+		font-size: 1rem;
+
+	}
+
+	.mini-art{
+		width: 30%;
+		float: left;
+		margin: 0 1%;
+
+	}
+	.mini-art:nth-child(4){
+		clear: none;
+	}
+
+	#smaller video{
+		width: 50%;
+		margin-left: 25%;
+	}
+	#norsk{
+		height: calc(8.5rem + 15px);
+	}
+
+	#norsk2{
+		height: calc(4rem + 15px);
+	}
+
+
+
+}
+@media only screen and (min-width: 1100px){
+	#norsk{
+		height: calc(6rem + 15px);
+	}
+}
 /*////////   Desktop    /////////*/
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1254px){
+	nav{
+	width: 70%;
+	margin: 0 0 0 7.5%;
+	}
 
 }
-
-/* Skriv under hver av de ulike skjermstørrelser! Mobil først. 
+@media only screen and (min-width: 1600px){
+	.image_cropper{
+		width: 75%;
+		margin-left: 12.5%;
+	}
+	#norsk{
+		height: calc(4rem + 15px);
+	}
+	#norsk2{
+		height: calc(1.5rem + 15px);
+	}
+}

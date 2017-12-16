@@ -1,0 +1,8 @@
+<h1>About us</h1>
+
+<p>
+	We are a group of 7 students who call ourselves InfoLight, currently studying Applied Computer Technology at Oslo and Akershus University College.
+	This is our solution to a problem we think is relevant to people's everyday lives and can provide a better experience of stressful situations and emergencies. 
+	The solution is meant to be subsidized by the state, which means this should be a non-profit solution.
+	Feel free to contact us <a href="mailto:s326289@stud.hioa.no?Subject=InfoLight" target="_top">by email</a> if you have any questions.
+</p>
