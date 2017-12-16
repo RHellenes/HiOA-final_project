@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<title>HiOA Final Project</title>
+
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta name="description" content="En nettside som tar frem et problem ved dagens varslinger i dagens samfunn, og foreslår en mulig løsning på problemet. Laget som et skoleprosjekt ved HiOA (Høgskolen i Oslo og Akershus.">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
+
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="logo_area">
+			<a href="index.html" tabindex="1"> <!-- Logo -->
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 163.5 48.2" style="enable-background:new 0 0 163.5 48.2;" xml:space="preserve">
+					<style type="text/css">
+						.st1{fill:#192042;}
+					
+						.st2{enable-background:new    ;}
+					</style>
+					<polygon class="st1" id="fill_override" points="5.9,26.6 5.8,29.6 13.2,26.6 13.1,23.6 "/>
+					<polygon class="st1" id="fill_override" points="13.4,31.2 13.3,28.4 5.7,31.5 5.6,34.4 "/>
+					<polygon class="st1" id="fill_override" points="6.1,21.7 6,24.7 13,21.8 12.9,19 "/>
+					<polygon class="st1" id="fill_override" points="13.6,35.8 13.5,32.9 6.6,35.7 5.3,35.7 3.3,39 5.3,39 13.6,39 15.6,39 "/>
+					<path class="st1" id="fill_override" d="M13.8,8.3l-0.5-0.5c-2.1-2.1-5.6-2.1-7.7,0L5.1,8.3C5,8.4,5.1,8.6,5.3,8.6h0.3v1h0.6v5H5.6v0.7h0.8l-0.2,4
+						l6.6-2.7l-0.1-1.3h0.6v-0.7h-0.6v-5h0.6v-1h0.3C13.8,8.6,14,8.4,13.8,8.3z M7.2,9.7h4.5v4.4H7.2V9.7z"/>
+					<g class="st2">
+						<path class="st1" id="fill_override" d="M35.4,27.6V39h-5.2V27c0-2.2-1.5-3.6-3.3-3.6c-2.2,0-3.5,1.6-3.5,3.7V39h-5.2V19.2h5.1v2.3
+							c0.8-1.4,2.7-2.8,5.3-2.8C34.2,18.7,35.4,23.4,35.4,27.6z"/>
+						<path class="st1" id="fill_override" d="M40.2,23.5h-2.1v-4.2h2.1v-0.7c0-5.1,3.4-6.8,7.3-6.8c0.8,0,1.3,0,1.7,0.1v4.4c-0.1,0-0.6-0.1-1-0.1
+							c-1.8,0-2.8,0.8-2.8,2.6v0.6h2.4v4.2h-3.4V39h-5.2V23.5z"/>
+						<path class="st1" id="fill_override" d="M60.8,18.7c6.1,0,10.7,4.5,10.7,10.4S67,39.5,60.8,39.5c-6.2,0-10.6-4.4-10.6-10.3
+							C50.2,23.2,54.8,18.7,60.8,18.7z M60.8,34.9c3.1,0,5.4-2.3,5.4-5.7s-2.3-5.8-5.4-5.8c-3.1,0-5.4,2.4-5.4,5.8
+							C55.4,32.5,57.7,34.9,60.8,34.9z"/>
+						<path class="st1" id="fill_override" d="M75,12.5h5.3v21.7h8.6V39H75V12.5z"/>
+						<path class="st1" id="fill_override" d="M94.3,11.5c1.7,0,3.1,1.3,3.1,3s-1.3,3-3.1,3c-1.7,0-3-1.3-3-3S92.5,11.5,94.3,11.5z M91.7,19.2h5.2V39h-5.2
+							V19.2z"/>
+						<path class="st1" id="fill_override" d="M104,40.4c0.6,0.3,2.9,1.4,5.6,1.4c2.8,0,5.4-0.9,5.4-3.9V37c-0.4,0.6-2.3,2.5-5.8,2.5
+							c-5.7,0-9.5-4.3-9.5-10.4c0-6.1,4-10.4,9.6-10.4c3.3,0,5.3,1.8,5.9,2.6v-2.1h4.9v17.3c0,7.4-4.8,9.8-10.6,9.8
+							c-2.7,0-5.5-0.8-7.3-1.8L104,40.4z M110.2,23.3c-3,0-5,2.3-5,5.8c0,3.5,2.1,5.8,5.1,5.8c3,0,5.1-2.3,5.1-5.8
+							C115.3,25.7,113.2,23.3,110.2,23.3z"/>
+						<path class="st1" id="fill_override" d="M141.6,27.6V39h-5.2V27c0-2.2-1.5-3.6-3.3-3.6c-2.2,0-3.6,1.6-3.6,3.7V39h-5.2V11.7h5.2v9.9
+							c0.8-1.4,2.6-2.8,5.2-2.8C140.4,18.7,141.6,23.4,141.6,27.6z"/>
+						<path class="st1" id="fill_override" d="M146,15.1h5.1v4.2h2.7v4.2h-3.7v7.6c0,3,0.9,3.6,2.9,3.6c0.3,0,0.5,0,0.9,0v4.5c0,0-0.8,0.2-2.2,0.2
+							c-4.7,0-6.8-2.6-6.8-8v-7.8h-2.1v-4.2h2.1V15.1z"/>
+					</g>
+				</svg>
+			</a>
+		</div>
+
+			<button class="menu_icon" onclick="mobile_nav()">
+			
+				<div class="line1"></div>
+				<div class="icon_text">Meny</div>
+				<div class="line2"></div>
+			</button>
+
+		
+
+		<nav id="color_override">
+			<div class="section_1">
+				<span class="nav_title">Innhold:</span>
+				<ul>
+					<a href="#content_section_1"  onclick="mobile_nav()">
+						<li>
+							<p class="anti_skew">Problemet</p>
+						</li>
+					</a>
+					<a href="#content_section_2" onclick="mobile_nav()">
+						<li>
+							<p class="anti_skew">Vår Løsning</p>
+						</li>
+					</a>
+					<a href="#content_section_3" onclick="mobile_nav()">
+						<li>
+							<p class="anti_skew">Om Oss</p>
+						</li>
+					</a>
+				</ul>
+			</div>
+
+			<div class="section_2">
+				<span class="nav_title" >Språk:</span>
+				<div id="lang_pos-ctrl">
+					<a href="index.html"  lang="en">English</a>
+					<span>/</span>
+					<a href="index_norwegian.html" id="active_lang" lang="no">Norsk</a>
+				</div>
+			</div>
+			
+		</nav>
+
+
+	</header>
+
+	<main>
+			
+
+
+		<div class="image_cropper">
+			<h1>Nødvarslinger gjort enkelt</h1>
+			<img src="images/problem.png" alt="Et ufokusert bilde av folk som går i gaten." />
+		</div>
+		
+		
+		<div id="content_section_1"></div>
+
+		<section>
+		<h1>Problemet</h1>
+
+		<p>
+			Kjenner du noen som har opplevd å være i en krisesituasjon der de ikke har fått noen som helst informasjon eller oppfølging? “Hva skjer?” “Hvor er jeg trygg?” “Hva kan jeg gjøre?” Dette er gjerne spørsmål som dukker opp om det oppstår en nødssituasjon. Ved krisesituasjoner er gode råd dyre,  og det er vanskelig å finne relevant informasjon på en enkel måte. Per dags dato finnes det ingen digital plattform for direkte krisevarsling i Norge. Dette ønsker vi i InfoLight å tilby en løsning på.
+		</p>
+		
+
+		<h2>Moderne samfunn</h2>
+
+		<p>
+			I dagens samfunn har vi gode teknologiske løsninger på det meste, og den moderne borger nærmer seg mer og mer en slags heldigital hverdag. Digitale løsninger er både praktiske og raske, og forenkler livene våre på utallige måter. Det finnes apper for det aller meste og det finnes utallige nyttige app-løsninger, men ved krisesituasjoner, derimot, er gode råd dyre.
+		</p>
+
+		<div class="blikkfang" id="norsk">
+			[...] i dag brukes fremdeles tyfonanlegg og massemedia som hovedkilde til varsling ved kriser. 
+		</div>
+
+		<p>
+			Midt i en nødsituasjon kan det være vanskelig å holde hodet klart. Er det kaotiske tilstander rundt deg og liv står på spill, er det heller ikke sikkert du greier å navigere deg frem til riktig informasjon på smarttelefonen din. I krisesituasjoner er tiden dyrebar, og de minuttene burde heller bli brukt på å hjelpe andre og å komme seg til sikkerhet.
+			<br>
+			I norge i dag brukes fremdeles tyfonanlegg og massemedia som hovedkilde til varsling ved kriser. Konseptet er at “når alarmen går” må befolkningen oppsøke informasjon i radio og andre medier. Med andre ord finnes det ingen digital løsning som formidler meldinger direkte til publikum per dags dato.
+
+		</p>
+
+		<h2>Informasjonsflyt</h2>
+
+		<p>
+			Ved dårlig informasjonsflyt kan rykter oppstå og publikum bli feilinformert. Enkelte kan også finne på å oppsøke situasjonene ut av nysgjerrighet, når de egentlig burde holde avstand. Dette kan skape unødvendig merarbeid for både Politi og utrykningstjenester, og tar bort dyrebar tid de egentlig burde brukt på å redde liv.
+		</p>
+
+	</section>
+	<div class="image_cropper">
+		<img src="images/solution.png" alt="En telefon med InfoLight appen som varsler om brann ved Høgskolen i Oslo og Akershus" />
+	</div>
+
+	<div id="content_section_2"></div>
+
+	<section>
+			<h1 >Vår løsning</h1>
+			
+			<p>
+				Vår løsning er et varslingssystem som kan integreres med allerede etablerte apper. Dette er et nødvarslingssystem som kan brukes til å varsle publikum innad i et bestemt område enten om det er situasjoner der liv står i fare, eller i unntakstilstander der nødetater trenger større rom til å jobbe med eller bare for å holde publikum unna.
+			</p>
+
+			<div class="blikkfang" id="norsk2">
+				[...] direkte til brukere i et spesifikt geografisk område.
+			</div>
+
+			<p>
+				InfoLight har en enorm rekkevidde og presisjon i ett og samme system. Løsningen gir nødetater og andre offentlige instanser mulighet til skreddersy varsler og sende disse direkte til brukere i et spesifikt geografisk område. Brukere med varslings-klare apper vil da bli varslet om de befinner seg i varslingsområdet. Så lenge varslene er aktive, vil også nye brukere med som beveger seg inn i det gjeldende området motta disse.
+			</p>
+			<div class="large_image_area">
+				<video id="laptop"  height="auto" autoplay controls>
+					<source src="videos/pc_send_warning_2.mp4" type="video/mp4">
+				</video>
+				<figcaption>En animasjon som viser hvor lett man kan markere et område og sende ut varsel.</figcaption>
+			</div>
+			<h2>Lettere å motta</h2>
+
+			<p>
+				Det er lettere å motta informasjon enn å oppsøke den selv. Dette gjelder spesielt hvis man er i en krisesituasjon. Ved å bruke apper som allerede har en stor brukergruppe kan vi nå frem til og varsle en betydelig del av befolkningen, selv i oppstartsfasen.
+
+			</p>
+			<div class="large_image_area" id="smaller">
+				<video id="mobile" width="100%" height="auto" autoplay controls>
+					<source src="videos/mobile_notification_2.mp4" type="video/mp4">
+				</video>
+				<figcaption>En animasjon som illustrer hvordan et push-varsel kan se ut.</figcaption>
+			</div>
+			<h2>Varsling-klare apper</h2>
+			<p>
+				Vår modulære løsning gjør det lettvint for apputviklere å integrere nødvarsling fra InfoLight i egne mobilapper. Så snart modulen er implementert fra utviklernes side og appen er oppdatert på brukers smarttelefon, er den “varslings-klar”.  Etter oppdatering av appen, vil bruker bli forespurt om det er ønskelig å aktivere nødvarsler, og det er da opp til brukeren å ta i bruk funksjonaliteten. Brukeren kan selv aktivere eller deaktivere nødvarslinger i appen etter eget ønske.
+			</p>
+<!-- 
+			<div class="blikkfang">
+				[...] økt tillit innad i egen brukerbase.
+			</div> -->
+
+			<h2>Samfunnsbevisst profil</h2>
+			<p>
+				Satt i et informasjon- og samfunnsbevisst lys, er det å bidra til å bygge norges nye nødvarslings-plattform utelukkende positivt. Det er tross alt til samfunnets beste om flest mulig får muligheten til å bli varslet ved nødssituasjoner og ekstraordinære hendelser. En varslings-klar app vil også øke sannsynligheten betraktelig for at brukeren aktiverer stedtjenester i mobilappen i det hele tatt. Dette i kombinasjon med økt mediedekning vil reflektere og føre til økt tillit innad i egen brukerbase.
+				<br>
+				For å ytterligere senke terskelen for implementering, er det også mulig for utviklere å søke om subsidier til utvikling og integrering  av nødvarslings-modulen. <a href="https://www.regjeringen.no/no/dep/kmd/org/avdelinger/aif/id1589/">Mer info om søknadsprosessen finnes hos Avdeling for IKT og fornying</a>.
+
+			</p>
+
+			<h2>Egen app-løsning</h2>
+			
+			<div class="large_image_area">
+				<img src="images/stand-alone_app.png" alt="Bilde som viser et eksempel på hvordan en egen stand-alone app kan se ut når den blir utviklet.">
+				<figcaption>Bilde som viser et eksempel på hvordan en egen stand-alone app kan se ut når den blir utviklet.</figcaption>
+			</div>
+
+			<p>
+				Vi tilbyr også en egen app-løsning som muliggjør den samme funksjonaliteten som gjennom varslings-klare apper. I tillegg kan man legge til egne lokasjoner om man ønsker varsler fra andre steder enn gjeldende posisjon. 
+			</p>
+
+	</section>
+
+	<div id="content_section_3"> </div>
+
+	<section>
+		<h1>Om oss</h1>
+		<p>
+			Vi er en gruppe på 7 studenter som kaller oss selv InfoLight, og vi studerer alle Anvendt Datateknologi ved Høgskolen i Oslo og Akershus.
+			Dette er løsningsforslaget vårt på et problem vi mener er relevant til folks hverdag og kan gi folk en bedre opplevelse av stressende situasjoner. Løsningen er ment å være subsidiert av staten, som betyr at dette skal være en non-profit løsning.
+			 <a href="mailto:s326289@stud.hioa.no?Subject=Vedr.%20InfoLight"  target="_top"><img src="images/envelope.svg" class="mail-icon" alt="Email Icon"/>Kontakt oss gjerne på epost</a> om det er noe du lurer på.
+		</p>
+	</section>
+	
+	</main>
+
+	<footer>
+
+		<img src="images/InfoLight-logo.svg" alt="Logoen til InfoLight"/>
+
+		<div class="mini-art">
+			<div class="footer-title">
+				<h3>Laget av:</h3>
+			</div>
+			<div class="footer-content">
+				<p>Amirhan s326322</p>
+				<p>Benjamin s236078</p>
+				<p>Jakkris s197101</p>
+				<p>Julie s326303</p>
+				<p>Lars Vidar s326313</p>
+				<p>Martin s326289</p>
+				<p>René s326265</p>
+			</div>
+		</div>
+
+		<div class="mini-art">
+			<div class="footer-title">
+				<h3>Tilhørlighet:</h3>
+			</div>
+			<div class="footer-content">
+				<p>Høgskolen i Oslo og Akershus </p>
+				<img src="images/hioa-logo-no.png" alt="Logoen til Hørgskolen i Oslo og Akershus">
+			</div>
+		</div>
+
+		<div class="mini-art">
+			<div class="footer-title">
+				<h3>Publisert:</h3>
+			</div>
+			<div class="footer-content">
+				<p>03.12.17</p>
+			</div>
+
+			<div class="footer-title">
+				<h3>Emne:</h3>
+			</div>
+			<div class="footer-content">
+				<p>Webprosjekt</p>
+			</div>
+
+			<div class="footer-title">
+				<h3>Kontakt:</h3>
+			</div>	
+			<div class="footer-content">
+				<a href="mailto:s326289@stud.hioa.no?Subject=Vedr.%20InfoLight" ><p>s326289@stud.hioa.no</p></a>
+			</div>
+
+		</div>
+
+	</footer> 
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

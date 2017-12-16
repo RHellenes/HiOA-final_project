@@ -8,6 +8,12 @@
 }
 *:active{
 	outline: 0px;
+} 
+/* En checker for om vi har husket å gi img en alt tekst  */
+img[alt=""],
+img[alt=" "],
+img:not([alt]){
+	border:5px dashed #c00;
 }
 
 /*font-family: 'Roboto', sans-serif;
@@ -17,7 +23,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	background-color: #fefefe;
@@ -68,6 +74,8 @@ header {
 	margin: 10px 20px;
 	position: relative;
 	cursor: pointer;
+	background: none;
+	border: none;
 }
 .line1,
 .line2{
@@ -87,12 +95,11 @@ header {
 	letter-spacing: .9px;
 	text-align: center;
 	transition: all .3s;
-	font-size: 1.4em;
-	position: absolute;
+	font-size: 1.3rem;
+	position: relative;
 	color:#192042;
 	font-weight: 700;
-	float: left;
-	margin:9.2px 0px 0px 0px;
+
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -116,14 +123,14 @@ header {
 	transition: all .3s;
 }
 .rotate1{
-	top:20px;
+	top:21px;
 	transition: all .3s;
 	-ms-transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
 .rotate2{
-	bottom: 14px;
+	bottom: 12px;
 	transition: all .3s;
 	-ms-transform: rotate(135deg); 
     -webkit-transform: rotate(135deg); 
@@ -190,6 +197,8 @@ nav ul a{
 	text-decoration: none;
 	float: left;
 	width: 100%;
+	background-color: rgba(0,0,0,0);
+	border: none;
 }
 
 
@@ -270,16 +279,52 @@ main {
 	margin: 0;
 
 }
+.image_cropper{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%; 
+	height: 400px; 
+	overflow: hidden;
+	float: left;
+	background: #192042;
+	position: relative;
+}
+.image_cropper > img{
+	width: 190%;
+	margin:0;
+	height:auto;
+	opacity: 1;
+	z-index: 2;
+	align-self: center;
+}
+.image_cropper:first-of-type > img{
+	opacity: .6;
+}
+.image_cropper h1{
+	position: absolute;
+	bottom: 60px;
+	color: #F2C94C;
+	opacity: 1;
+	z-index: 3;
+
+}
 section{
 	width: 90%;
 	margin: 20px 5%;
 	float: left;
 }
+#content_section_1,
+#content_section_2,
+#content_section_3{
+	width: 100%;
+	height: 1px;
+	float: left;
+}
 
 
 h1,
-h2,
-h3{
+h2{
 	font-family: "Roboto Condensed", condensed;
 	margin: 2.6rem 0 0 0;
 	width: 100%;
@@ -289,12 +334,12 @@ h3{
 	clear: both;
 	
 }
-main section > h1{
+h1{
 	font-size: 3em;
 	font-weight: 700;
 	text-align: center;
 }
-main section > h1::after{
+h1::after{
 	content: " ";
 	width: 80%;
 	margin: 0 0 0 10%;
@@ -309,7 +354,9 @@ main section > h1::after{
 
 
 
-
+main > h1{
+	margin: 10px 0;
+}
 
 
 main section > h2 {
@@ -349,18 +396,44 @@ main p {
 	margin: 0;
 	list-style: none;
 	padding-left: 20px;
+	float: left;
+}
+
+.liste_i_tekst li{
+	margin: 3px 0;
+	font-size: 1.1em;
+}
+.liste_i_tekst li::before{
+	content: " ";
+	height: 4px;
+	width: 12px;
+	background-color: #F2C94C;
+	-ms-transform: skew(-25deg,0deg);
+    -webkit-transform: skew(-25deg,0deg);
+    transform: skew(-25deg,0deg);
+    float: left;
+    margin: 8px 7px 0 0;
 }
 
 
 main section .large_image_area{
 	width: 100%;
-	/*height: 400px;*/ /* Temp */
-	margin: 0;
-	background-color: #f2f2f2;
+	margin: 10px 0 0 0 ;
 	float: left;
 	display: block;
+	overflow: hidden;
+
+	border-top: solid 2px #f2f2f2;
+	border-left: solid 2px #f2f2f2;
+	border-right: solid 2px #f2f2f2;
+
 
 }
+.large_image_area img{
+	width: 150%;
+	margin-left: -20%;
+	height: auto;
+	}
 
 .large_image_area > figcaption{
 	float: left;
@@ -368,24 +441,27 @@ main section .large_image_area{
 	padding: 0.8em 1em 1.3em 0.8em;
 	width: 100%;
 	height: auto;
-	border-top: solid 2px #fff;
+	
 	color:#192042;
+	background-color: #f2f2f2;
 }
+.large_image_area video{
+		width: 101%;
+		margin-left: -0.5%;
+	}
+
 
 
 .blikkfang {
 	font-family: "Roboto", sans-serif;
-	font-size: 0.9em;
-	margin: 10% 0%;
-	width: 94%;
-	padding: 0% 5% 0% 9%;
+	padding: 0% 5% 0% 0%;
 	font-weight: 300;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin: 2.25rem 0%;
 	width: 90%;
 	float: left;
 	display: block;
-	height: calc(3rem + 15px);
+	
 
 }
 
@@ -395,10 +471,18 @@ main section .large_image_area{
     -webkit-transform: skew(0deg,-25deg);
     transform: skew(0deg,-25deg);
     background-color: #F2C94C; 
-    height: 41px;
+    height: 100%;
     width: 8px;
-    margin: 0 2%;  
+    margin: 0 4%;  
     float: left;
+}
+
+#norsk{
+	height: calc(5rem + 15px);
+}
+
+#norsk2{
+	height: calc(2.1rem + 15px);	
 }
 
 .anti_skew{
@@ -408,72 +492,76 @@ main section .large_image_area{
     transform: skew(20deg,0deg); 
 }
 
-/*   herfra har julie jobbet:    */
+section p a img{
+	display: inline-block;
+	height: 1em;
+	width: auto;
+	margin: 0 5px -3px 0;
+}
+
 footer {
-	background-color: #F2F4FA;
+	background-color: #FAFBFF;
 	color: #192042;
 	width: 100%;
-	height: 50%;
-	font-family: "Roboto", condensed;
-	font-size: 0.82em;
-}
-
-footer #logo {
-	max-width: 40%;
-	height: auto;
-	margin-left: 10%;
-}
-
-footer h1 {
-	font-size: 1.1em;
-	font-weight: medium;
-	margin: 0;
-	padding: 2%;
-}
-
-
-.madeBy, .affiliation {
-	max-width: 50%;
-	max-height: auto; 
-	margin-left: 0;
-	margin-right: auto;
-	padding: 0% 0% 0% 10%;
+	font-family: "Roboto", sans-serif;
 	
-}
-
-.madeBy ul {
-	padding: 0;
-	margin: 0;
-}
-.madeBy li {
-	list-style-type: none;
-	list-style: none;
-	margin: 0;
-}
-
-.affiliation {
-	float: right;
-}
-
-.affiliation img {
-	max-width: 35%;
-	max-height: 35%;
-}
-
-.madeBy {
 	float: left;
-} 
+	padding:10px 5% 2.5em 5%;
+	margin-top: 30px;
+}
+footer > img{
+	width: 60%;
 
-.publishedSubject {
-	max-width: 100%
-	height: 20%;
+	clear: both;
+
 }
 
-/* jeg vil ha all teksten i .publishedSubject på én linje for mobilversjon, men får det ikke til! 'Published' henger igjen oppi med de andre. */ 
+footer h3{
+	font-weight: 400;
+}
 
+footer p{
+	font-weight: 300;
+}
 
+footer h3,
+footer p{
+	line-height: 1.2em;
+	font-size: 1rem;
 
+}
 
+.mini-art{
+	width: 100%;
+	float: left;
+	/*display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;*/
+}
+
+.footer-title{
+	width: 40%;
+	display: block;
+	float: left;
+}
+
+.footer-content{
+	width: 59%;
+	display: block;
+	float: left;
+}
+
+.footer-content img{
+	width: 75%;
+	height: auto;
+}
+
+@media only screen and (min-width:410px){
+	#norsk{
+		height: calc(3.5rem + 15px);
+	}
+
+}
 
 
 @media only screen and (min-width: 586px){
@@ -486,16 +574,54 @@ footer h1 {
 	main section > p{
 		font-size: 1.2em;
 	}
+	footer > img{
+		width: 70%;
+		float: left;
+	}
+	.mini-art{
+		width: 49%;
+	}
+	.mini-art:nth-child(4){
+		clear: both;
+	}
+	.image_cropper > img{
+		width: 130%;
+	}	
+
+	
 
 }
 
+@media only screen and (min-width: 614px){
+	#norsk{
+		height: calc(2rem + 15px);
+	}
+	#norsk2{
+		height: calc(1rem + 15px);
+	}
+}
 
 /*////////   Tablet-stående    /////////*/
 @media only screen and (min-width: 786px){
 	main{
 		width: 85%;
 	}
+	footer > img{
+		width: 40%;
+		margin-right: 20%;
+
+	}
+	.mini-art:nth-child(2){
+		clear: left;
+	}
+	.image_cropper > img{
+		width: 100%;
+	}	
 	
+	#smaller video{
+		width: 60%;
+		margin-left: 20%;
+	}
 }
 
 
@@ -589,37 +715,98 @@ footer h1 {
 	#color_override{
 		background-color: #fefefe;
 	}
-	main section > hr,
+
+
 	main section > h1,
 	main section > h2,
-	main section > h3,
-	main section > p{
+	main section > p,
+	.liste_i_tekst,
+	main section .large_image_area{
 		width: 70%;
 		margin-left: 20%;
 	}
-	main section > p{
+	main section > p,
+	.liste_i_tekst{
 		font-size: 1.4em;
+		padding: 0;
+	}
+
+	.liste_i_tekst li{
+		margin: 10px 0;
 	}
 	
-
+	.liste_i_tekst li::before{
+		margin-top: 12px;
+	}
+	.image_cropper {
+		height: 500px;
+	}
 	.blikkfang{
-		width: 60%;
+		width: 70%;
 		font-size: 2rem;
-		margin: 1.3rem 0 1.3rem 25%;
-		height: calc(4rem + 15px);
+		margin: 1.3rem 0 1.3rem 15%;
+		height:calc(5.5rem + 15px);
 
 	}
 	.blikkfang::before{
 		width: 9px;
+
 	}
 	main section > h2{
 
 	}
+	footer > img{
+	width: 20%;
+	margin-right: 60%;
+
+	clear: both;
+
+	}
+
+	footer h3{
+		font-weight: 400;
+	}
+
+	footer p{
+		font-weight: 300;
+	}
+
+	footer h3,
+	footer p{
+		line-height: 1.2em;
+		font-size: 1rem;
+
+	}
+
+	.mini-art{
+		width: 30%;
+		float: left;
+		margin: 0 1%;
+
+	}
+	.mini-art:nth-child(4){
+		clear: none;
+	}
+
+	#smaller video{
+		width: 50%;
+		margin-left: 25%;
+	}
+	#norsk{
+		height: calc(8.5rem + 15px);
+	}
+
+	#norsk2{
+		height: calc(4rem + 15px);
+	}
+
 
 
 }
 @media only screen and (min-width: 1100px){
-	
+	#norsk{
+		height: calc(6rem + 15px);
+	}
 }
 /*////////   Desktop    /////////*/
 @media only screen and (min-width: 1254px){
@@ -627,6 +814,17 @@ footer h1 {
 	width: 70%;
 	margin: 0 0 0 7.5%;
 	}
-}
 
-/* Skriv under hver av de ulike skjermstørrelser! Mobil først. 
+}
+@media only screen and (min-width: 1600px){
+	.image_cropper{
+		width: 75%;
+		margin-left: 12.5%;
+	}
+	#norsk{
+		height: calc(4rem + 15px);
+	}
+	#norsk2{
+		height: calc(1.5rem + 15px);
+	}
+}

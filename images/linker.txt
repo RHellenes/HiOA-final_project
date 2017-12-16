@@ -1,0 +1,5 @@
+
+stock bilde = https://ak2.picdn.net/shutterstock/videos/14711722/thumb/1.jpg
+
+
+Mockup = https://dribbble.com/shots/2793291-Free-Person-Holding-Smartphone-Mockup-With-Front-Screen
